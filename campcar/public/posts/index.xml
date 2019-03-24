@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Terminal</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Terminal</description>
+    <title>Posts on じにょぎの日常</title>
+    <link>https://kimujinyogi.github.io/posts/</link>
+    <description>Recent content in Posts on じにょぎの日常</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Mar 2019 23:34:50 +0900</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kimujinyogi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>最初</title>
-      <link>/posts/firstpost/</link>
+      <link>https://kimujinyogi.github.io/posts/firstpost/</link>
       <pubDate>Sun, 24 Mar 2019 23:34:50 +0900</pubDate>
       
-      <guid>/posts/firstpost/</guid>
+      <guid>https://kimujinyogi.github.io/posts/firstpost/</guid>
       <description> 最初のお試しタイトル 今週は家族と楽しい時間を過ごすことができました </description>
     </item>
     
