@@ -20,9 +20,9 @@ paginate = 5
 [languages]
   [languages.en]
     title = "じにょぎの日常"
-    subtitle = "A simple, retro theme for Hugo"
+    subtitle = "日常生活の何かをつぶやく"
     keywords = "キャンピングカー"
-    copyright = ""
+    copyright = "kimujinyogi"
     menuMore = "メニュー展開"
     readMore = "さらに表示"
     readOtherPosts = "他の記事を確認"
@@ -33,10 +33,10 @@ paginate = 5
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
+        identifier = "じにょぎについて"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "mywife"
+        name = "妻のブログ"
+        url = "https://ameblo.jp/9-miho/"
