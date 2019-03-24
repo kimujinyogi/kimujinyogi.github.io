@@ -1,5 +1,5 @@
 baseurl = "https://kimujinyogi.github.io/"
-languageCode = "en-us"
+languageCode = "ja"
 theme = "terminal"
 paginate = 5
 
