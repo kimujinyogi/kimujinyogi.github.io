@@ -28,7 +28,7 @@ paginate = 5
     readOtherPosts = "他の記事を確認"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "じにょぎの日常"
       logoHomeLink = "/"
 
     [languages.en.menu]
