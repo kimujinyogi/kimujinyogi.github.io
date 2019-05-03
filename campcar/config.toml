@@ -2,6 +2,7 @@ baseurl = "https://kimujinyogi.github.io/"
 languageCode = "ja"
 theme = "terminal"
 paginate = 5
+googleAnalytics = "UA-139531645-1"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
