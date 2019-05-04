@@ -66,3 +66,8 @@ disqusShortname = "kimujinyogi-github-io-1"
 		weight = 4
         name = "じにょぎについて"
         url = "/about"
+      [[languages.ja.menu.main]]
+        identifier = "Privacy"
+		weight = 5
+        name = "プライバシーポリシー"
+        url = "/privacy"

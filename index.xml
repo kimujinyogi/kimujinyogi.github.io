@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kimujinyogi@gmail.com</copyright>
-    <lastBuildDate>Sat, 04 May 2019 10:28:51 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 17:35:38 +0900</lastBuildDate>
     
 	<atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>プライバシーポリシー</title>
+      <link>https://kimujinyogi.github.io/privacy/</link>
+      <pubDate>Sat, 04 May 2019 17:35:38 +0900</pubDate>
+      
+      <guid>https://kimujinyogi.github.io/privacy/</guid>
+      <description>個人情報の利用目的 当ブログでは、メールでのお問い合わせ、メールマガジンへの登録などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報</description>
+    </item>
     
     <item>
       <title>このブログについて</title>

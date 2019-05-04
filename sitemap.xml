@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kimujinyogi.github.io/privacy/</loc>
+    <lastmod>2019-05-04T17:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/about/</loc>
     <lastmod>2019-05-04T10:28:51+09:00</lastmod>
   </url>
@@ -30,7 +35,7 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/</loc>
-    <lastmod>2019-05-04T10:28:51+09:00</lastmod>
+    <lastmod>2019-05-04T17:35:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
