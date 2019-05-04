@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kimujinyogi@gmail.com</copyright>
-    <lastBuildDate>Fri, 03 May 2019 22:19:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 10:28:51 +0900</lastBuildDate>
     
 	<atom:link href="https://kimujinyogi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>このブログについて</title>
+      <link>https://kimujinyogi.github.io/posts/about/</link>
+      <pubDate>Sat, 04 May 2019 10:28:51 +0900</pubDate>
+      
+      <guid>https://kimujinyogi.github.io/posts/about/</guid>
+      <description>じにょぎについて    名前 金珍奕     国籍 韓国   居住地 日本、埼玉県   家族構成 妻と娘   職業 フリーランス、アプリエンジニア   やってきたこと アプリ・ゲームの開発、各種管理画面作成、データ分析   趣味 ゲーム、旅行   youtube 9 MIHO   連絡先 kimujinyogi@gmail.com    ホームページ作成やアプリ開発やゲーム開発など依頼は常時受け付けてます！</description>
+    </item>
     
     <item>
       <title>ついに WHON NEUN (ヴォーン ノイン) のカタログが・・・！！！</title>
