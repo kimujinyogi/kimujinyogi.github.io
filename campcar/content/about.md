@@ -4,6 +4,7 @@ date: 2019-05-04T10:28:51+09:00
 description: "簡単な自己紹介"
 showFullContent : false
 author: jinyogi
+pagetype: nonpost
 draft: false
 ---
 
