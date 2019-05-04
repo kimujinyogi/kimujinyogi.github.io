@@ -1,10 +1,14 @@
 baseurl = "https://kimujinyogi.github.io/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
+hasCJKLanguage = true
 theme = "terminal"
 paginate = 5
 googleAnalytics = "UA-139531645-1"
 disqusShortname = "kimujinyogi-github-io-1"
+
+[taxonomies]
+  tag = "tags"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
@@ -12,11 +16,11 @@ disqusShortname = "kimujinyogi-github-io-1"
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "green"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 3
+  showMenuItems = 4
   # set theme to full screen width
   fullWidthTheme = false
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
 
@@ -43,10 +47,22 @@ disqusShortname = "kimujinyogi-github-io-1"
 
     [languages.ja.menu]
       [[languages.ja.menu.main]]
-        identifier = "About"
-        name = "じにょぎについて"
-        url = "/about"
+        identifier = "Home"
+		weight = 1
+        name = "ホーム"
+        url = "/"
+      [[languages.ja.menu.main]]
+        identifier = "tags"
+		weight = 2
+        name = "タグリスト"
+        url = "/tags"
       [[languages.ja.menu.main]]
         identifier = "mywife"
+		weight = 3
         name = "妻のブログ"
         url = "https://ameblo.jp/9-miho/"
+      [[languages.ja.menu.main]]
+        identifier = "About"
+		weight = 4
+        name = "じにょぎについて"
+        url = "/about"

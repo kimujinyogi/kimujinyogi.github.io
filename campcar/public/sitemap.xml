@@ -18,17 +18,6 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/tags/about/</loc>
-    <lastmod>2019-05-04T10:28:51+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kimujinyogi.github.io/posts/</loc>
     <lastmod>2019-05-03T22:19:36+09:00</lastmod>
     <priority>0</priority>
@@ -36,7 +25,6 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/tags/</loc>
-    <lastmod>2019-05-04T10:28:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
