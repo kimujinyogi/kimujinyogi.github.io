@@ -35,8 +35,8 @@ disqusShortname = "kimujinyogi-github-io-1"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "じにょぎについて"
-        name = "About"
+        identifier = "About"
+        name = "じにょぎについて"
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "mywife"
