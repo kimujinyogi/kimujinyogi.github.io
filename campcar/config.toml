@@ -1,5 +1,6 @@
 baseurl = "https://kimujinyogi.github.io/"
 languageCode = "ja"
+defaultContentLanguage = "ja"
 theme = "terminal"
 paginate = 5
 googleAnalytics = "UA-139531645-1"
@@ -19,8 +20,15 @@ disqusShortname = "kimujinyogi-github-io-1"
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
 
+  # サイト名
+  site_name = "じにょぎの日常"
+  # 名前
+  author = "jinyogi"
+  # description
+  description = "旅行 キャンピングカー ヴォーンDC ノイン WHON DC NEUN"
+
 [languages]
-  [languages.en]
+  [languages.ja]
     title = "じにょぎの日常"
     subtitle = "日常生活の何かをつぶやく"
     keywords = "キャンピングカー"
@@ -29,16 +37,16 @@ disqusShortname = "kimujinyogi-github-io-1"
     readMore = "さらに表示"
     readOtherPosts = "他の記事を確認"
 
-    [languages.en.params.logo]
+    [languages.ja.params.logo]
       logoText = "じにょぎの日常"
       logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
         identifier = "About"
         name = "じにょぎについて"
         url = "/about"
-      [[languages.en.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "mywife"
         name = "妻のブログ"
         url = "https://ameblo.jp/9-miho/"
