@@ -9,3 +9,7 @@ or whatever comment engine you want -> https://gohugo.io/content-management/comm
 {{ if and (ne $.Permalink "http://localhost:1313/about/") (ne $.Permalink "https://kimujinyogi.github.io/about/") (ne $.Permalink "http://localhost:1313/privacy/") (ne $.Permalink "https://kimujinyogi.github.io/privacy/") }}
 	{{ template "_internal/disqus.html" . }}
 {{ end }}
+
+{{ if and (.IsPage) (ne $.Permalink "http://localhost:1313/about/") (ne $.Permalink "https://kimujinyogi.github.io/about/") (ne $.Permalink "http://localhost:1313/privacy/") (ne $.Permalink "https://kimujinyogi.github.io/privacy/") }}
+    {{ template "_default/ads.html" . }}
+{{ end }}
