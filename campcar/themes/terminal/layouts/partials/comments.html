@@ -7,6 +7,5 @@ Hugo directory and insert:
 or whatever comment engine you want -> https://gohugo.io/content-management/comments/#readout
 -->
 {{ if and (ne $.Permalink "http://localhost:1313/about/") (ne $.Permalink "https://kimujinyogi.github.io/about/") (ne $.Permalink "http://localhost:1313/privacy/") (ne $.Permalink "https://kimujinyogi.github.io/privacy/") }}
-    {{ template "partials/ads.html" . }}
 	{{ template "_internal/disqus.html" . }}
 {{ end }}
