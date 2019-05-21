@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://kimujinyogi.github.io/posts/buygopro/</loc>
+    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/about/</loc>
     <lastmod>2019-05-04T10:28:51+09:00</lastmod>
   </url>
@@ -23,13 +28,20 @@
   </url>
   
   <url>
+    <loc>https://kimujinyogi.github.io/tags/gopro/</loc>
+    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/</loc>
-    <lastmod>2019-05-03T22:19:36+09:00</lastmod>
+    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kimujinyogi.github.io/tags/</loc>
+    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
