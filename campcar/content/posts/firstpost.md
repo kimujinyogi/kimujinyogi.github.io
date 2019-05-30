@@ -28,10 +28,8 @@ WOHNシリーズには３つのレイアウトがあり、
 今はまだプロトタイプしかなくてパンフレットもサイトにも情報はのってないですが、
 キャンピングカーの雑誌とか、店においてあったりします。
 
-### 斜め前からのショット
-{{< imagelink src="/firstpost/neun_side.png" >}}
+{{< imagelink src="/firstpost/neun_side.png" class="imagecenter" title="斜め前からのショット" >}}
 
-### 正面 CARBYとの比較ショット
-{{< imagelink src="/firstpost/neun_vs_carby.png" >}}
+{{< imagelink src="/firstpost/neun_vs_carby.png" class="imagecenter" title="正面 CARBYとの比較ショット" >}}
 
 

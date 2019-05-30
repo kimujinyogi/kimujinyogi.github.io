@@ -10,6 +10,6 @@ draft: true
 
 aaaa
 
-{{< imagelink src="/buygopro/test.png" >}}
+{{< imagelink src="/buygopro/test_b.png" class="imagecenter" title="xxxx" >}}
 
 s
