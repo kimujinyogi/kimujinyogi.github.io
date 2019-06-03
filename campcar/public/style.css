@@ -2,6 +2,7 @@
 /* 70%のセンターサイズ */
 figure.imagecenter {
     text-align: center;
+	width: 100%;
 }
 figure.imagecenter img {
     margin: 0 auto;

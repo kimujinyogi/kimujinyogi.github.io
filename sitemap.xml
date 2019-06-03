@@ -3,9 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kimujinyogi.github.io/</loc>
-    <lastmod>2019-05-04T17:35:38+09:00</lastmod>
-    <priority>0</priority>
+    <loc>https://kimujinyogi.github.io/posts/joycon/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
   </url>
   
   <url>
@@ -14,26 +13,8 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/tags/gopro/</loc>
-    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kimujinyogi.github.io/posts/buygopro/</loc>
     <lastmod>2019-05-04T16:23:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/posts/</loc>
-    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/</loc>
-    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -47,14 +28,50 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</loc>
-    <lastmod>2019-05-03T22:19:36+09:00</lastmod>
+    <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
+    <lastmod>2019-03-24T23:34:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/game/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
-    <lastmod>2019-03-24T23:34:50+09:00</lastmod>
+    <loc>https://kimujinyogi.github.io/tags/gopro/</loc>
+    <lastmod>2019-05-04T16:23:56+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/posts/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/switch/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</loc>
+    <lastmod>2019-05-03T22:19:36+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
