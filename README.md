@@ -4,7 +4,7 @@
 
 ```
 cd campcar
-fugo new posts/xxxx.md
+hugo new posts/xxxx.md
 vim posts/xxxx.md
 ```
 titleを変更、draftをfalseにする（公開）、mdファイルの最後に本文を追記する
@@ -16,7 +16,7 @@ coverは画像のパス
 ```
 
 ```
-hudo server -D
+hugo server -D
 ```
 
 記事を確認
