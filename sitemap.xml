@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kimujinyogi.github.io/posts/parenting_190724/</loc>
+    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/joycon/</loc>
     <lastmod>2019-05-30T10:39:42+09:00</lastmod>
   </url>
@@ -46,7 +51,7 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/posts/</loc>
-    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,13 +69,19 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/</loc>
-    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</loc>
     <lastmod>2019-05-03T22:19:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
+    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
