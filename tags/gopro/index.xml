@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kimujinyogi@gmail.com</copyright>
-    <lastBuildDate>Sat, 04 May 2019 16:23:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 07:30:43 +0900</lastBuildDate>
     
 	<atom:link href="https://kimujinyogi.github.io/tags/gopro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>プールでGoProを水没させてしまった話</title>
+      <link>https://kimujinyogi.github.io/posts/gopro_submerged/</link>
+      <pubDate>Tue, 03 Sep 2019 07:30:43 +0900</pubDate>
+      
+      <guid>https://kimujinyogi.github.io/posts/gopro_submerged/</guid>
+      <description>GoPro hero 7 購入して３カ月して水没させる やってしまいました・・・ GoProにはuseとhdmiの指口があり、フタを開けることができます ただ、フタを</description>
+    </item>
     
     <item>
       <title>GoPro hero7 blackとおすすめアクセサリー</title>
