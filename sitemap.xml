@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kimujinyogi.github.io/posts/macbook_20191007/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/gopro_submerged/</loc>
     <lastmod>2019-09-03T07:30:43+09:00</lastmod>
   </url>
@@ -55,8 +60,14 @@
   </url>
   
   <url>
+    <loc>https://kimujinyogi.github.io/tags/mac/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/</loc>
-    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,7 +85,7 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/</loc>
-    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
