@@ -18,7 +18,7 @@ draft: false
 | 職業 | フリーランス、アプリエンジニア |
 | やってきたこと | アプリ・ゲームの開発、各種管理画面作成、データ分析 |
 | 趣味 | ゲーム、旅行 |
-| youtube | [9 MIHO](https://www.youtube.com/channel/UCqZu662lrR9uRyALwDjHIAQ[) |
+| youtube | [きむほーむ](https://www.youtube.com/channel/UCqZu662lrR9uRyALwDjHIAQ) |
 | 連絡先 | kimujinyogi@gmail.com |
 
 ホームページ作成やアプリ開発やゲーム開発など依頼は常時受け付けてます！

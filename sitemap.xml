@@ -1,10 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kimujinyogi.github.io/tags/mac/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/macbook_20191007/</loc>
     <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/posts/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/</loc>
+    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/gopro/</loc>
+    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
   </url>
   
   <url>
@@ -15,6 +40,21 @@
   <url>
     <loc>https://kimujinyogi.github.io/posts/parenting_190724/</loc>
     <lastmod>2019-07-26T17:00:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
+    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/game/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/tags/switch/</loc>
+    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
   </url>
   
   <url>
@@ -43,62 +83,13 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
-    <lastmod>2019-03-24T23:34:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/game/</loc>
-    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/gopro/</loc>
-    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/mac/</loc>
-    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/posts/</loc>
-    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/switch/</loc>
-    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/tags/</loc>
-    <lastmod>2019-05-30T10:39:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/</loc>
-    <lastmod>2019-10-07T20:36:12+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</loc>
     <lastmod>2019-05-03T22:19:36+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
-    <lastmod>2019-07-26T17:00:02+09:00</lastmod>
-    <priority>0</priority>
+    <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
+    <lastmod>2019-03-24T23:34:50+09:00</lastmod>
   </url>
   
 </urlset>

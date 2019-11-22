@@ -1,0 +1,13 @@
+<!-- imagelink -->
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+    {{ with .Get "src"}}<a href="{{.}}">{{ end }}
+    <img src="{{ .Get "src" }}" 
+    {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    {{ if .Get "src"}}</a>{{ end }}
+    {{ if .Get "title" }}
+        {{ if isset .Params "title" }}
+        {{ with .Get "src"}}<a href="{{.}}"> {{ end }}
+        <h4>{{ .Get "title" }}</h4>{{ end }}
+        {{ if .Get "src"}}</a> {{ end }}
+    {{ end }}
+</figure>

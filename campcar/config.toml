@@ -1,4 +1,5 @@
 baseurl = "https://kimujinyogi.github.io/"
+#baseurl = "/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
