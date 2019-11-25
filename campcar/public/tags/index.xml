@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kimujinyogi@gmail.com</copyright>
-    <lastBuildDate>Tue, 05 Nov 2019 08:57:16 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2019 23:01:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kimujinyogi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ヴォーンDCノイン</title>
+      <link>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Mon, 25 Nov 2019 23:01:00 +0900</pubDate>
+      
+      <guid>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>育児</title>
@@ -54,15 +63,6 @@
       <pubDate>Thu, 30 May 2019 10:39:42 +0900</pubDate>
       
       <guid>https://kimujinyogi.github.io/tags/switch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ヴォーンDCノイン</title>
-      <link>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</link>
-      <pubDate>Fri, 03 May 2019 22:19:36 +0900</pubDate>
-      
-      <guid>https://kimujinyogi.github.io/tags/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%B3dc%E3%83%8E%E3%82%A4%E3%83%B3/</guid>
       <description></description>
     </item>
     
