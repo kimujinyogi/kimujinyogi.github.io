@@ -1,6 +1,6 @@
 ---
 title: "プライバシーポリシー"
-date: 2019-05-04T17:35:38+09:00
+date: 2019-01-07T17:35:38+09:00
 showFullContent : false
 draft: false
 ---
