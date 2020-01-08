@@ -1,0 +1,3 @@
+[submodule "campcar/themes/zzo"]
+	path = campcar/themes/zzo
+	url = https://github.com/zzossig/hugo-theme-zzo.git

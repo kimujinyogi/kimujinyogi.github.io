@@ -3,6 +3,8 @@ title: "ついに WHON NEUN (ヴォーン ノイン) のカタログが・・・
 date: 2019-05-03T22:19:36+09:00
 description: "詳細仕様とオプションについて"
 tags: ["ヴォーンDCノイン"] 
+categories: ["キャンピングカー"]
+series: ["キャンピングカーの話"]
 draft: false
 ---
 

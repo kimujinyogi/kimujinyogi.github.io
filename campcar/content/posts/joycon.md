@@ -2,6 +2,8 @@
 title: "「ジョイコン」の修理出さないで！これで治る！[スイッチ][JoyCon]"
 date: 2019-05-30T10:39:42+09:00
 tags: ["Switch", "Game"] 
+categories: ["家電"]
+series: ["家電"]
 description: "ジョイコンのスティックが勝手に動く問題を簡単に治せるアイテムの紹介"
 showFullContent : false
 cover : ""

@@ -2,6 +2,8 @@
 title: "娘が３歳になったので、今までの育児を振り替えてみました。"
 date: 2019-07-26T17:00:02+09:00
 tags: ["育児"] 
+categories: ["育児"]
+series: ["育児"]
 description: "育児に置いて一番気にしてるところと、やっていて良かったところと、良くなかったかな・・・と思うところをまとめました"
 showFullContent : false
 draft: false

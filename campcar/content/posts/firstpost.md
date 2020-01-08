@@ -3,6 +3,8 @@ title: "キャンピングカーを購入！！(ヴォーンDC NEUN)"
 date: 2019-03-24T23:34:50+09:00
 description: "キャンピングカーを購入したというお話"
 tags: ["ヴォーンDCノイン"] 
+categories: ["キャンピングカー"]
+series: ["キャンピングカーの話"]
 draft: false
 ---
 

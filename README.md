@@ -13,7 +13,10 @@ coverは画像のパス
 クリック出来る画像を貼る (サムネール用途大きい画像も別で用意するようにしよう）
 ```
 {{< imagelink src="/buygopro/test_b.png" class="imagecenter" title="xxxx" >}}↲
+
+{{< thumblink src="/joycon/spray01.jpg" thumbnail="/joycon/spray01t.jpg" class="imagecenter" title="xxx" >}}
 ```
+
 
 ```
 hugo server -D
@@ -30,3 +33,7 @@ cp -r campcar/public/ ./
 あとはpush 
 
 
+theme update
+```
+git submodule update --remote --merge
+```

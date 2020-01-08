@@ -3,7 +3,8 @@ baseurl = "https://kimujinyogi.github.io/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
-theme = "terminal"
+# theme = "terminal"
+theme = "zzo"
 paginate = 5
 googleAnalytics = "UA-139531645-1"
 disqusShortname = "kimujinyogi-github-io-1"
@@ -31,6 +32,8 @@ disqusShortname = "kimujinyogi-github-io-1"
   author = "jinyogi"
   # description
   description = "旅行 キャンピングカー ヴォーンDC ノイン WHON DC NEUN"
+  # css
+  customCSS = ["/css/custom.css"]
 
 [languages]
   [languages.ja]

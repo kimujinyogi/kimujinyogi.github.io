@@ -1,0 +1,41 @@
+[[main]]
+  identifier = "about"
+  name = "じにょぎについて"
+  url = "about"
+  weight = 1
+
+[[main]]
+  identifier = "posts"
+  name = "記事"
+  url = "posts"
+  weight = 2
+
+[[main]]
+  identifier = "archive"
+  name = "一覧"
+  url = "archive"
+  weight = 3
+
+[[main]]
+  identifier = "gallery"
+  name = "写真"
+  url = "gallery"
+  weight = 4
+    
+[[main]]
+  parent = "gallery"
+  name = "旅の写真"
+  url = "gallery/trip"
+  weight = 5
+
+[[main]]
+  parent = "gallery"
+  name = "その他"
+  url = "gallery/others"
+  weight = 6
+
+[[main]]
+  identifier = "Privacy"
+  name = "プライバシーポリシー"
+  url = "privacy"
+  weight = 7

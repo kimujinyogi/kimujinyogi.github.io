@@ -9,3 +9,8 @@ figure.imagecenter img {
     width: 70%;
     border-radius: 8px;
 }
+h1 {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    background-color: seagreen;
+}

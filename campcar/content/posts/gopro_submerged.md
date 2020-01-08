@@ -2,6 +2,8 @@
 title: "プールでGoProを水没させてしまった話"
 date: 2019-09-03T07:30:43+09:00
 tags: ["gopro"] 
+categories: ["家電"]
+series: ["家電"]
 description: "プールでGoProで撮影していて画面の移りがおかしくなり制御ができなくなったときに、</br>フタの閉め忘れに気づきました・・・。"
 showFullContent : false
 author : ""
