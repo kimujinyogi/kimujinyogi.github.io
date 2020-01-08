@@ -2,6 +2,8 @@
 title: "プライバシーポリシー"
 date: 2019-01-07T17:35:38+09:00
 showFullContent : false
+author: jinyogi
+pagetype: nonpost
 draft: false
 ---
 
