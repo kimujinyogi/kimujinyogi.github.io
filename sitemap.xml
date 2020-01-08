@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kimujinyogi.github.io/categories/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/posts/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/series/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,6 +29,16 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/posts/campcarlife20190108/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/categories/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%94%E3%83%B3%E3%82%B0%E3%82%AB%E3%83%BC/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/series/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%94%E3%83%B3%E3%82%B0%E3%82%AB%E3%83%BC%E3%81%AE%E8%A9%B1/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,8 +63,28 @@
   </url>
   
   <url>
+    <loc>https://kimujinyogi.github.io/series/%E8%82%B2%E5%85%90/</loc>
+    <lastmod>2019-11-05T08:57:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/categories/%E8%82%B2%E5%85%90/</loc>
+    <lastmod>2019-11-05T08:57:16+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
     <lastmod>2019-11-05T08:57:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/archive/_index.ko/</loc>
+    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/archive/</loc>
+    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
@@ -64,6 +104,16 @@
   
   <url>
     <loc>https://kimujinyogi.github.io/posts/gopro_submerged/</loc>
+    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</loc>
+    <lastmod>2019-09-03T07:30:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/series/%E5%AE%B6%E9%9B%BB/</loc>
     <lastmod>2019-09-03T07:30:43+09:00</lastmod>
   </url>
   
@@ -110,6 +160,21 @@
   <url>
     <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
     <lastmod>2019-03-24T23:34:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/gallery/</loc>
+    <lastmod>2018-10-12T10:20:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/gallery/trip/</loc>
+    <lastmod>2018-10-12T10:20:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/gallery/others/</loc>
+    <lastmod>2018-10-11T10:20:16+09:00</lastmod>
   </url>
   
 </urlset>
