@@ -63,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/series/%E8%82%B2%E5%85%90/</loc>
+    <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
     <lastmod>2019-11-05T08:57:16+09:00</lastmod>
   </url>
   
@@ -73,13 +73,8 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</loc>
+    <loc>https://kimujinyogi.github.io/series/%E8%82%B2%E5%85%90/</loc>
     <lastmod>2019-11-05T08:57:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/archive/_index.ko/</loc>
-    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
@@ -108,12 +103,12 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</loc>
+    <loc>https://kimujinyogi.github.io/series/%E5%AE%B6%E9%9B%BB/</loc>
     <lastmod>2019-09-03T07:30:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/series/%E5%AE%B6%E9%9B%BB/</loc>
+    <loc>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</loc>
     <lastmod>2019-09-03T07:30:43+09:00</lastmod>
   </url>
   
@@ -138,18 +133,8 @@
   </url>
   
   <url>
-    <loc>https://kimujinyogi.github.io/privacy/</loc>
-    <lastmod>2019-05-04T17:35:38+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kimujinyogi.github.io/posts/buygopro/</loc>
     <lastmod>2019-05-04T16:23:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kimujinyogi.github.io/about/</loc>
-    <lastmod>2019-05-04T10:28:51+09:00</lastmod>
   </url>
   
   <url>
@@ -160,6 +145,16 @@
   <url>
     <loc>https://kimujinyogi.github.io/posts/firstpost/</loc>
     <lastmod>2019-03-24T23:34:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/privacy/</loc>
+    <lastmod>2019-01-07T17:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kimujinyogi.github.io/about/</loc>
+    <lastmod>2019-01-04T10:28:51+09:00</lastmod>
   </url>
   
   <url>

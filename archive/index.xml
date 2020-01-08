@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archives on じにょぎの日常</title>
+    <title>Archive on じにょぎの日常</title>
     <link>https://kimujinyogi.github.io/archive/</link>
-    <description>Recent content in Archives on じにょぎの日常</description>
+    <description>Recent content in Archive on じにょぎの日常</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
@@ -15,15 +15,6 @@
     
     
     
-      
-      <item>
-        <title>Archive</title>
-        <link>https://kimujinyogi.github.io/archive/_index.ko/</link>
-        <pubDate>Sat, 19 Oct 2019 11:44:14 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <guid>https://kimujinyogi.github.io/archive/_index.ko/</guid>
-        <description>archive page</description>
-      </item>
       
     
   </channel>
