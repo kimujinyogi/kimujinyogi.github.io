@@ -7,13 +7,13 @@ other = "2006年01月02日"
 [reading-time]
 other = "分でこの記事を読めます"
 
-[taxo-tags]
+[tags]
 other = "タグ"
 
-[taxo-categories]
+[categories]
 other = "カテゴリー"
 
-[taxo-series]
+[series]
 other = "シリーズ"
 
 [archive-dateformat]
@@ -24,6 +24,12 @@ other = "01月02日"
 
 [single-dateformat]
 other = "2006年01月02日"
+
+[pub-dateformat]
+other = "2006年01月02日"
+
+[resume-dateformat]
+other = "2006年01月"
 
 [single-related]
 other = "関連記事"
@@ -46,11 +52,20 @@ other = "ページビュー数"
 [donate-message]
 other = "寄付する"
 
+[share-message]
+other = "シェア"
+
 [contact-name]
 other = "名前"
 
 [contact-email]
 other = "Eメール"
+
+[contact-tel]
+other = "電話番号"
+
+[contact-file]
+other = "ファイル"
 
 [contact-message]
 other = "内容"
@@ -69,3 +84,15 @@ other = "修正日"
 
 [tooltip-reading-time]
 other = "読む時間"
+
+[showcase-overview]
+other = "概要"
+
+[showcase-pinned]
+other = "固定"
+
+[nojs-message]
+other = "JAVA SCRIPTを有効にしてください"
+
+[posts-by-order]
+other = "最近の投稿"

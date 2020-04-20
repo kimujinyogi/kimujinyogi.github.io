@@ -3,7 +3,7 @@
   "name": "My Extension",
   "short_name": "My Extension",
   "version": "versionString",
-  "default_locale": "en",
+  "default_locale": "jp",
   "description": "A plain text description",
   "icons": [
     {

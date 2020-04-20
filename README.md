@@ -17,6 +17,11 @@ coverは画像のパス
 {{< thumblink src="/joycon/spray01.jpg" thumbnail="/joycon/spray01t.jpg" class="imagecenter" title="xxx" >}}
 ```
 
+テーマのアップデート
+```
+git submodule update --remote --merge
+```
+
 
 ```
 hugo server -D

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Game on じにょぎの日常</title>
     <link>https://kimujinyogi.github.io/tags/game/</link>
@@ -15,16 +20,49 @@
     
     
     
+
       
       <item>
         <title>「ジョイコン」の修理出さないで！これで治る！[スイッチ][JoyCon]</title>
         <link>https://kimujinyogi.github.io/posts/joycon/</link>
         <pubDate>Thu, 30 May 2019 10:39:42 +0900</pubDate>
         <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Thu, 30 May 2019 10:39:42 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/joycon/</guid>
         <description>ジョイコンのスティックが勝手に動く・・・・ 常におかしいわけでもない。 修理に出すにはどこで修理をしてもらうにしても時間とお金もかかる。 ジョイコ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Switch</category>
+            
+          
+            
+              <category>Game</category>
+            
+          
+        
+        
+          
+            
+              <category>家電</category>
+            
+          
+        
+        
+          
+            
+              <category>家電</category>
+            
+          
+        
       </item>
       
+
     
   </channel>
 </rss>
