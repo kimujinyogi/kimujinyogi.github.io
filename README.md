@@ -30,9 +30,13 @@ hugo server -D
 記事を確認
 
 ```
-hugo 
+hugo
 cd ..
-cp -r campcar/public/ ./
+git add -A
+git commit -m " exec hugo "
+cp -R campcar/public ./tmpPublic
+git checkout master
+cp -R ./tmpPublic/* ./
 ```
 
 あとはpush 
