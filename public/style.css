@@ -1,0 +1,16 @@
+/* shortcutの imagelink でclass指定で画像の大きさを調整したい */
+/* 70%のセンターサイズ */
+figure.imagecenter {
+    text-align: center;
+	width: 100%;
+}
+figure.imagecenter img {
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 8px;
+}
+figure.h1 {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    background-color: seagreen;
+}

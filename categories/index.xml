@@ -14,31 +14,13 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright>kimujinyogi@gmail.com</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 09:54:39 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 12:18:37 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
-      
-      <item>
-        <title>家電</title>
-        <link>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</link>
-        <pubDate>Thu, 03 Dec 2020 09:54:39 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        
-        <guid>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</guid>
-        <description></description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
       <item>
         <title>キャンピングカー</title>
@@ -137,6 +119,24 @@
         <author>kimujinyogi@gmail.com (じにょぎ)</author>
         
         <guid>https://kimujinyogi.github.io/categories/%E8%82%B2%E5%85%90/</guid>
+        <description></description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>家電</title>
+        <link>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</link>
+        <pubDate>Tue, 03 Sep 2019 07:30:43 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        
+        <guid>https://kimujinyogi.github.io/categories/%E5%AE%B6%E9%9B%BB/</guid>
         <description></description>
         
         <dc:creator>じにょぎ</dc:creator>

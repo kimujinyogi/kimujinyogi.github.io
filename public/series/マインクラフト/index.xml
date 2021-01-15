@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>マインクラフト on じにょぎの日常</title>
+    <link>https://kimujinyogi.github.io/series/%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88/</link>
+    <description>Recent content in マインクラフト on じにょぎの日常</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
+    <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
+    <copyright>kimujinyogi@gmail.com</copyright>
+    <lastBuildDate>Fri, 15 Jan 2021 13:08:17 +0900</lastBuildDate>
+    
+        <atom:link href="https://kimujinyogi.github.io/series/%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>めっちゃリアル！NAPPリソースを試してみた、ついでに久しぶりに建築</title>
+        <link>https://kimujinyogi.github.io/posts/mc20210115/</link>
+        <pubDate>Fri, 15 Jan 2021 13:08:17 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Fri, 15 Jan 2021 13:08:17 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/mc20210115/</guid>
+        <description>半年ぶり ほぼ半年・・・もしかしたらそれ以上時間がたち、 久しぶりすぎて何をしてたのか 何もかも忘れてしまいました(笑) とりあえず畑の麦を回収して</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>JAVA版、砂糖きびが骨粉で育たないことにびっくり</title>
+        <link>https://kimujinyogi.github.io/posts/mc20200424/</link>
+        <pubDate>Sat, 25 Apr 2020 01:48:54 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sat, 25 Apr 2020 01:48:54 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/mc20200424/</guid>
+        <description>今回は拠点の近くに鶏さんがおおかったので、メインの食料をチキンにすることにしました！ そしてこちらが簡易鶏牧場です。隣に麦畑も。 ※画像はタップ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>マインクラフトを始めましたJAVA EDITION with BSL Shaders</title>
+        <link>https://kimujinyogi.github.io/posts/mc20200421/</link>
+        <pubDate>Tue, 21 Apr 2020 01:42:23 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 21 Apr 2020 01:42:23 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/mc20200421/</guid>
+        <description>約2年ぶりのマインクラフト 初めて遊んだのはVITA版マイクラです その後iOS版、Android版、windows10版、switch版（vi</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
