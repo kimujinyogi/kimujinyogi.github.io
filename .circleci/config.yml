@@ -17,7 +17,4 @@ jobs:
       - deploy:
           name: Deploy to GitHub Pages
           command: |
-              echo "$(ls -a)"
-              echo "jjjjjjjjjjjjjjjjj"
-              echo "$(ls .circleci/ -a)"
               ./.circleci/deploy.sh
