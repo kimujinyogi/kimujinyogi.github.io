@@ -23,6 +23,7 @@ echo j_kim clone end
 cd $DEPLOY_DIR
 
 echo "$(pwd)"
+cd campcar
 echo "$(ls)"
 
 HUGO_ENV=production hugo -v
