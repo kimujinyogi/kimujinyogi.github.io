@@ -12,4 +12,4 @@ jobs:
           command: echo "$(hugo version)"
       - deploy:
           name: Deploy to GitHub Pages
-          command: sh .circleci/deploy.sh
+          command: sh ./.circleci/deploy.sh
