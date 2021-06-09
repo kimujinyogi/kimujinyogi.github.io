@@ -17,4 +17,5 @@ jobs:
           name: Deploy to GitHub Pages
           shell: /bin/sh
           command: |
+            echo "$(pwd)"
             bash deploy.sh
