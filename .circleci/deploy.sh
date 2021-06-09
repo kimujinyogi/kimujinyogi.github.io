@@ -22,9 +22,9 @@ echo j_kim clone end
 # rsyncでhugoで生成したHTMLをコピー
 cd $DEPLOY_DIR
 
-echo "$(pwd)"
+git submodule update --init --recursive
+
 cd campcar
-echo "$(ls)"
 
 HUGO_ENV=production hugo -v
 
