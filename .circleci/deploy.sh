@@ -10,7 +10,7 @@ git config --global push.default simple
 git config --global user.email kimujinyogi_circle@gmail.com
 git config --global user.name $CIRCLE_USERNAME
 
-echo "$(git branch -a)"
+git checkout master;git pull origin master;
 
 # gh-pagesブランチをdeployディレクトリにクローン
 git clone -q --branch=campcar $CIRCLE_REPOSITORY_URL $DEPLOY_DIR
