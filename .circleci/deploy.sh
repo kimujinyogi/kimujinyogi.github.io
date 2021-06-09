@@ -30,8 +30,10 @@ HUGO_ENV=production hugo -v
 
 rsync -arv --delete ./public/* ../
 
-echo "$(pwd)"
+cd ../..
 
-git add -f .
+rm -rf deploy
+
+git add -A
 git commit -m "Deploy #$CIRCLE_BUILD_NUM from CircleCI [ci skip]" || true
 git push -f
