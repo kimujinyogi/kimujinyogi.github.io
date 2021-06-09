@@ -15,5 +15,6 @@ jobs:
             - "95:ec:92:31:a6:22:26:fe:93:0e:f3:6f:55:d0:0f:7c"
       - deploy:
           name: Deploy to GitHub Pages
+          shell: /bin/sh
           command: |
             ./.circleci/deploy.sh
