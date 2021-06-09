@@ -8,15 +8,15 @@ jobs:
       - image: cibuilds/hugo:latest
     working_directory: ~/hugo
     steps:
-      #- run:
-      #name: Update enviroment
-      #command: apk update && apk add git
       - run:
-        name: Hugo version
-        command: echo "$(hugo version)"
+          name: Update enviroment
+          command: apk update && apk add git
+      - run:
+          name: Hugo version
+          command: echo "$(hugo version)"
       - checkout
-      - run:
-        name: Building blog pages
-        command: |
-          HUGO_ENV=production hugo -v
-          #cp public/index.xml public/feed.xml
+        #     - run:
+        #         name: Building blog pages
+        #         command: |
+        #           HUGO_ENV=production hugo -v
+        #           #cp public/index.xml public/feed.xml
