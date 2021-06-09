@@ -3,7 +3,8 @@ jobs:
   build:
     branches:
       only:
-        - master
+        #- master
+        - campcar
     docker:
       - image: cibuilds/hugo:latest
     steps:
