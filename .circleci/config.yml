@@ -17,4 +17,4 @@ jobs:
           name: Deploy to GitHub Pages
           shell: /bin/sh
           command: |
-            bash .deploy.sh
+            bash deploy.sh
