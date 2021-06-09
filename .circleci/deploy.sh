@@ -19,11 +19,10 @@ git clone -q --branch=campcar $CIRCLE_REPOSITORY_URL $DEPLOY_DIR
 
 echo j_kim clone end
 
-echo "$(ls)"
-
 # rsyncでhugoで生成したHTMLをコピー
 cd $DEPLOY_DIR
 
+echo "$(pwd)"
 echo "$(ls)"
 
 HUGO_ENV=production hugo -v
