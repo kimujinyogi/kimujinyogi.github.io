@@ -13,8 +13,12 @@ git config --global user.name $CIRCLE_USERNAME
 # gh-pagesブランチをdeployディレクトリにクローン
 git clone -q --branch=campcar $CIRCLE_REPOSITORY_URL $DEPLOY_DIR
 
+echo ($ls)
+
 # rsyncでhugoで生成したHTMLをコピー
 cd $DEPLOY_DIR
+
+echo ($ls)
 
 HUGO_ENV=production hugo -v
 
