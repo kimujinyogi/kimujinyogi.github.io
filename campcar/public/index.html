@@ -9,15 +9,18 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.32195737929df2c8096e855a5789cbb3f1331224d9169e8705493e7008f47df8.js"></script>
+
+
+
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
-<script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
+<script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
 
-<script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
-
-<script defer src="/js/helper/fadeinout.min.93a331f96194789a542f33690bbe4f0c102c7e78ffc018217f5a1c33010bad91.js"></script>
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -96,6 +99,74 @@
           navCollapse.setAttribute('data-open', 'true');
           navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
           navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
         }
       }
     }) : null;
@@ -289,11 +360,13 @@
         if (st < 45) {
           return null;
         }
-        
-        if (!navbar.classList.contains('navbar--hide')) {
-          navbar.classList.add('navbar--hide');
-        } else if (navbar.classList.contains('navbar--show')) {
-          navbar.classList.remove('navbar--show');
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -360,10 +433,12 @@
           gttBtn.style.display = "none";
         }
 
-        if (navbar.classList.contains('navbar--hide')) {
-          navbar.classList.remove('navbar--hide');
-        } else if (!navbar.classList.contains('navbar--show')) {
-          navbar.classList.add('navbar--show');
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -444,6 +519,17 @@
     var rootEleme = document.getElementById('root');
     var selectThemeElem = document.querySelectorAll('.select-theme');
     var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
 
     var setMetaColor = function(themeColor) {
       var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
@@ -476,7 +562,21 @@
         metaThemeColor.setAttribute('content', '#eee8d5');
         metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
         metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
-      } 
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
     }
     
     if (localTheme) {
@@ -497,7 +597,7 @@
     selectThemeItemElem ? 
     selectThemeItemElem.forEach(function (v, i) {
       v.addEventListener('click', function (e) {
-        var selectedThemeVariant = e.target.text.trim();
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
         localStorage.setItem('theme', selectedThemeVariant);
         setMetaColor(selectedThemeVariant);
 
@@ -551,60 +651,85 @@
 
   
     
+    var baseurl = JSON.parse("\"https://kimujinyogi.github.io/\"");
+    
     var permalink = JSON.parse("\"https://kimujinyogi.github.io/\"");
+    
+    var langprefix = JSON.parse("\"\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("\"main\"");
     
     var sectionType = JSON.parse("\"page\"");
-
+    
+    var kind = JSON.parse("\"home\"");
+    
     var fuse = null;
 
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
         }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
       li.className = 'search-result__item';
       
       var a = document.createElement('a');
-      a.innerHTML = obj.title;
+      a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
-      if (obj.description) {
-        descDiv.innerHTML = obj.description;
-      } else if (obj.content) {
-        descDiv.innerHTML = obj.content.substring(0, 225);
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
       }
       
       li.appendChild(a);
@@ -1078,7 +1203,7 @@
   
     var mobileSearchInputElem = document.querySelector('#search-mobile');
     var mobileSearchClassElem = document.querySelector('.mobile-search');
-    var mobileSearchBtnElem = document.querySelector('#mobileSearchBtn');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
     var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
     var mobileSearchContainer = document.querySelector('#search-mobile-container');
     var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
@@ -1088,19 +1213,21 @@
       mobileSearchClassElem.style.display = 'none';
     }
 
-    mobileSearchBtnElem ? 
-    mobileSearchBtnElem.addEventListener('click', function () {
-      if (mobileSearchContainer) {
-        mobileSearchContainer.style.display = 'block';
-      }
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
 
-      if (mobileSearchInputElem) {
-        mobileSearchInputElem.focus();
-      }
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
 
-      if (htmlElem) {
-        htmlElem.style.overflowY = 'hidden';
-      }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
     }) : null;
 
     mobileSearchCloseBtnElem ? 
@@ -1195,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1216,9 +1344,9 @@
 <meta name="description" content="旅行 キャンピングカー ヴォーンDC ノイン WHON DC NEUN" />
 
 
-<meta name="created" content="2019-01-07T17:35:38&#43;0900">
-<meta name="modified" content="2019-01-07T17:35:38&#43;0900">
-<meta property="article:published_time" content="2019-01-07T17:35:38&#43;0900">
+<meta name="created" content="2021-01-15T13:08:17&#43;0900">
+<meta name="modified" content="2021-01-15T13:08:17&#43;0900">
+<meta property="article:published_time" content="2021-01-15T13:08:17&#43;0900">
 
 <meta name="author" content="jinyogi">
 <meta property="article:author" content="https://kimujinyogi.github.io/@jinyogi">
@@ -1230,7 +1358,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="旅行 キャンピングカー ヴォーンDC ノイン WHON DC NEUN">
 
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.83.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1298,7 +1426,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
   
 <script type="application/javascript">
 var doNotTrack = false;
@@ -1336,15 +1463,15 @@ if (!doNotTrack) {
 
 
         <div class="wrapper" data-type="page" data-kind="home">
-            <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
     
-    <a href="/" title="ホームページ" rel="home" class="navbar__logo-link">
+    <a href="/" title="ホーム" rel="home" class="navbar__logo-link">
       <img src="/logo.png" alt="Home" class="navbar__logo">
     </a>
     
     
-      <a href="/" title="ホームページ" rel="home" class="navbar__title-link">
+      <a href="/" title="ホーム" rel="home" class="navbar__title-link">
         <h6 class="navbar__title">じにょぎの日常</h6>
       </a>
     
@@ -1385,7 +1512,7 @@ if (!doNotTrack) {
 </div>
 
 
-<div id="mobileSearchBtn" class="mobile-search__btn" data-ani="true">
+<div class="mobile-search__btn navbar-search" data-ani="true">
   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 </div>
 
@@ -1502,13 +1629,15 @@ if (!doNotTrack) {
     
       <li class="navbarm__menu--item ">
         <a href="/series" class="navbarm__menu--term" data-index="2">
-          シリーズ
+          連載
         </a>
       </li>
     
   </ul>
 </div>
   <div class="navbar__menu">
+  
+  
   
 <div class="theme" data-ani="true">
   <div class="dropdown">
@@ -1601,7 +1730,7 @@ if (!doNotTrack) {
 </div>
 </nav>
             
-<header class="header">
+<header class="header ">
     
         
     
@@ -1629,6 +1758,10 @@ if (!doNotTrack) {
             
             
             
+            
+            
+            
+            
                 
   <article class="summary-classic" data-ani="true">
   <div class="summary-classic__flex-box" >
@@ -1637,13 +1770,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20210115/'> めっちゃリアル！NAPPリソースを試してみた、ついでに久しぶりに建築</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20210115/'>めっちゃリアル！NAPPリソースを試してみた、ついでに久しぶりに建築</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2021年 01月 15日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1662,6 +1795,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1671,13 +1805,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/st20201203/'> iPhone12 Pro Maxを購入しました、他グッズも</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/st20201203/'>iPhone12 Pro Maxを購入しました、他グッズも</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 12月 03日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1696,6 +1830,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1705,13 +1840,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcar_20200806/'> ２回目の傷をちゃんと？直しました</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcar_20200806/'>２回目の傷をちゃんと？直しました</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 08月 06日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1730,6 +1865,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1739,13 +1875,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/20200803_musume/'> いきなり笑わせてくる娘の話</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/20200803_musume/'>いきなり笑わせてくる娘の話</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 08月 03日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1764,6 +1900,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1773,13 +1910,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/daily_20200608/'> 目の調子がどんどん悪くなるので色々試してみようと思います</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/daily_20200608/'>目の調子がどんどん悪くなるので色々試してみようと思います</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 06月 08日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1798,6 +1935,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1807,13 +1945,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/program_20200525/'> プログラミングをする時に忘れてはいけないこと</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/program_20200525/'>プログラミングをする時に忘れてはいけないこと</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 05月 25日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1832,6 +1970,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1841,13 +1980,13 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20200424/'> JAVA版、砂糖きびが骨粉で育たないことにびっくり</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20200424/'>JAVA版、砂糖きびが骨粉で育たないことにびっくり</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 04月 25日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
-          &middot; <span title="書いた人" dir="ltr">✍️&nbsp;jinyogi</span>
+          &middot; <span title="著者" dir="ltr">✍️&nbsp;jinyogi</span>
           
         </h6>
       </header>
@@ -1866,6 +2005,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1875,11 +2015,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20200421/'> マインクラフトを始めましたJAVA EDITION with BSL Shaders</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/mc20200421/'>マインクラフトを始めましたJAVA EDITION with BSL Shaders</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 04月 21日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -1898,6 +2038,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1907,11 +2048,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/20200326_second_accident/'> ヴォーンNEUN(ノイン)DC納車後、2回めの衝突・・・</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/20200326_second_accident/'>ヴォーンNEUN(ノイン)DC納車後、2回めの衝突・・・</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 03月 26日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;1&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;1&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -1930,6 +2071,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1939,11 +2081,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcarlife20190108/'> ついにヴォーンNEUN(ノイン)DCの納車して早速家の駐車場で予行練習</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcarlife20190108/'>ついにヴォーンNEUN(ノイン)DCの納車して早速家の駐車場で予行練習</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2020年 01月 08日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -1962,6 +2104,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1971,11 +2114,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcar_1911255/'> 10カ月たってやっと東和モータースから連絡が来ました！！ついにヴォーンNEUN(ノイン)の納車か！！</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/campcar_1911255/'>10カ月たってやっと東和モータースから連絡が来ました！！ついにヴォーンNEUN(ノイン)の納車か！！</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2019年 11月 25日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;1&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;1&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -1994,6 +2137,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -2003,11 +2147,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/parenting_191105/'> 3年4カ月に及ぶ授乳がやっと終わりました、授乳のやめ方でお悩みの方はぜひ参考にしてみてください</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/parenting_191105/'>3年4カ月に及ぶ授乳がやっと終わりました、授乳のやめ方でお悩みの方はぜひ参考にしてみてください</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2019年 11月 05日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -2026,6 +2170,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -2035,11 +2180,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/macbook_20191007/'> MacBook Pro が充電できない問題、修理するしかなかった</a> </h5>
+        <h5 class="title h5"><a href='https://kimujinyogi.github.io/posts/macbook_20191007/'>MacBook Pro が充電できない問題、修理するしかなかった</a> </h5>
         <h6 class="subtitle caption">
           <time title="作成日" dir="ltr">📅&nbsp;2019年 10月 07日 </time>
           
-          <span title="読む時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
+          <span title="読了時間" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分でこの記事を読むことができます </span>
           
         </h6>
       </header>
@@ -2058,6 +2203,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
             
             
 
@@ -2071,19 +2217,13 @@ if (!doNotTrack) {
   <ul class="pagination">
     
       
-      <script>
-      </script>
       
-        <li
-        class="active"><a href="/">1</a></li>
+        <li class="active"><a href="/">1</a></li>
       
     
       
-      <script>
-      </script>
       
-        <li
-        ><a href="/page/2/">2</a></li>
+        <li ><a href="/page/2/">2</a></li>
       
     
   </ul>
@@ -2328,6 +2468,7 @@ if (!doNotTrack) {
         </span>
         
         
+        
             <span class="tag">
                 <a href="/tags/game/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -2496,6 +2637,7 @@ if (!doNotTrack) {
         </span>
         
         
+        
             <span class="tag">
                 <a href="/categories/programing/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -2594,9 +2736,10 @@ if (!doNotTrack) {
     <section>
         <span class="title p2">
             <a href="/series/" class="taxo__title">
-                シリーズ
+                連載
             </a>
         </span>
+        
         
         
             <span class="tag">
@@ -2877,11 +3020,12 @@ if (!doNotTrack) {
   
   
     
-      <a href="https://kimujinyogi.github.io//index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
+      <a href="https://kimujinyogi.github.io/index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
       </a>
     
   
+
 
   </div>
 </div>
@@ -2895,11 +3039,11 @@ if (!doNotTrack) {
 
     <hr />
 
-    <div class="basicflex">
+    <div class="basicflex flexwrap">
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
     </div>
 
