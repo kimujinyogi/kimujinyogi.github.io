@@ -16,6 +16,4 @@ jobs:
       - checkout
       - deploy:
           name: Deploy to GitHub Pages
-          shell: /bin/sh
-          command: |
-            bash deploy.sh
+          command: ./.circleci/deploy.sh
