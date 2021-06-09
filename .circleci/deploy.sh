@@ -24,7 +24,7 @@ cd campcar
 
 HUGO_ENV=production hugo -v
 
-rsync -arv --delete ./public/* ../
+rsync -arv --delete ./public/* ../../
 
 cd ../..
 
