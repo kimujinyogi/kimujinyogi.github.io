@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Fri, 15 Jan 2021 13:08:17 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jun 2021 18:29:08 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,38 @@
         
       
 
+      
+      <item>
+        <title>更新頻度を上げるためにCircleCIを導入しました</title>
+        <link>https://kimujinyogi.github.io/posts/st20210609/</link>
+        <pubDate>Wed, 09 Jun 2021 18:29:08 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 09 Jun 2021 18:29:08 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/st20210609/</guid>
+        <description>お久しぶりです とても久しぶりに更新しようと思います 一応Deployテストはしているものの、 実際に記事を追加して反映されるのを確認したく こうや</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
       
       <item>
         <title>めっちゃリアル！NAPPリソースを試してみた、ついでに久しぶりに建築</title>

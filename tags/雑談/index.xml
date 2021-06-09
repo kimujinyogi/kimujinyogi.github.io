@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>雑談 on じにょぎの日常</title>
+    <link>https://kimujinyogi.github.io/tags/%E9%9B%91%E8%AB%87/</link>
+    <description>Recent content in 雑談 on じにょぎの日常</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
+    <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
+    <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
+    <lastBuildDate>Wed, 09 Jun 2021 18:29:08 +0900</lastBuildDate>
+    
+        <atom:link href="https://kimujinyogi.github.io/tags/%E9%9B%91%E8%AB%87/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>更新頻度を上げるためにCircleCIを導入しました</title>
+        <link>https://kimujinyogi.github.io/posts/st20210609/</link>
+        <pubDate>Wed, 09 Jun 2021 18:29:08 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 09 Jun 2021 18:29:08 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/st20210609/</guid>
+        <description>お久しぶりです とても久しぶりに更新しようと思います 一応Deployテストはしているものの、 実際に記事を追加して反映されるのを確認したく こうや</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
