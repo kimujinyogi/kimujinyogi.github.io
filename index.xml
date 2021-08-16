@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 26 Jul 2021 00:12:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Aug 2021 00:12:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,42 @@
         
       
 
+      
+      <item>
+        <title>村人が品切れしてからずっと変わらない問題を治す</title>
+        <link>https://kimujinyogi.github.io/posts/mc20210816/</link>
+        <pubDate>Mon, 16 Aug 2021 00:12:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 16 Aug 2021 00:12:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/mc20210816/</guid>
+        <description>じにょぎです、こんにちは！ 今回は以前作っていた村人交易場の問題点を修正しようと思います。 村人交易場とは 村人には職業というのがあり各職業によっ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>光るイカなど新しい要素を発見！</title>
