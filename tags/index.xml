@@ -14,11 +14,29 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 16 Aug 2021 00:12:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Nov 2021 00:12:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>Mac</title>
+        <link>https://kimujinyogi.github.io/tags/mac/</link>
+        <pubDate>Fri, 26 Nov 2021 00:12:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        
+        <guid>https://kimujinyogi.github.io/tags/mac/</guid>
+        <description></description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>マインクラフト</title>
@@ -171,24 +189,6 @@
         <author>kimujinyogi@gmail.com (じにょぎ)</author>
         
         <guid>https://kimujinyogi.github.io/tags/%E8%82%B2%E5%85%90/</guid>
-        <description></description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Mac</title>
-        <link>https://kimujinyogi.github.io/tags/mac/</link>
-        <pubDate>Mon, 07 Oct 2019 20:36:12 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        
-        <guid>https://kimujinyogi.github.io/tags/mac/</guid>
         <description></description>
         
         <dc:creator>じにょぎ</dc:creator>
