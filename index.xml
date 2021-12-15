@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Fri, 26 Nov 2021 00:12:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Dec 2021 00:12:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,42 @@
         
       
 
+      
+      <item>
+        <title>マイクラで地下世界を鉱石だけ丸見えにしてみました コマンドの紹介です</title>
+        <link>https://kimujinyogi.github.io/posts/mc20211215/</link>
+        <pubDate>Wed, 15 Dec 2021 00:12:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 15 Dec 2021 00:12:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/mc20211215/</guid>
+        <description>じにょぎです、こんにちは！ 今回は洞窟アップデートで地下の鉱石を確認できるコマンドを紹介しようと思います 自分の世界をコピーして行ってしまうと、</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+        
+          
+            
+              <category>マインクラフト</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>M1 Pro1週間仕事で使ってみた感想(iOSエンジニア)</title>
