@@ -13,7 +13,7 @@ jobs:
           command: echo "$(hugo version)"
       - add_ssh_keys:
           fingerprints:
-            - "95:ec:92:31:a6:22:26:fe:93:0e:f3:6f:55:d0:0f:7c"
+            - "0a:c8:50:24:aa:25:82:e6:fe:e7:88:d4:d3:db:f9:79"
       - checkout
       - deploy:
           name: Deploy to GitHub Pages
