@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Wed, 15 Dec 2021 00:12:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jun 2023 12:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,42 @@
         
       
 
+      
+      <item>
+        <title>2023年になって、雑談</title>
+        <link>https://kimujinyogi.github.io/posts/z20230606/</link>
+        <pubDate>Tue, 06 Jun 2023 12:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 06 Jun 2023 12:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/z20230606/</guid>
+        <description>気づけばもう6月 本当に色々なことがあり、色々な生活の変化がありました 娘が小学1年生に 自分のこともが初めて小学校に入学しました。 日本の学校って</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>マイクラで地下世界を鉱石だけ丸見えにしてみました コマンドの紹介です</title>
