@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>VisionPro on じにょぎの日常</title>
+    <link>https://kimujinyogi.github.io/tags/visionpro/</link>
+    <description>Recent content in VisionPro on じにょぎの日常</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
+    <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
+    <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
+    <lastBuildDate>Sat, 12 Oct 2024 15:00:00 +0900</lastBuildDate>
+    
+        <atom:link href="https://kimujinyogi.github.io/tags/visionpro/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Apple Vision Pro でキーボードを繋いで利用する上で必ず設定すべき項目1つだけ</title>
+        <link>https://kimujinyogi.github.io/posts/z20241012_0/</link>
+        <pubDate>Sat, 12 Oct 2024 15:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sat, 12 Oct 2024 15:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/posts/z20241012_0/</guid>
+        <description>検索がまともにできない keyboard で色々制御したいなと思ったときに、 ハードウェアキーボードのフルアクセス機能を ON にして使う人は少なくないはず・・・！！</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>VisionPro</category>
+            
+          
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+        
+          
+            
+              <category>雑談</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
