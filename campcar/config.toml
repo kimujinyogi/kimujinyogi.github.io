@@ -6,7 +6,6 @@ hasCJKLanguage = true
 # theme = "terminal"
 theme = "zzo"
 paginate = 5
-googleAnalytics = "UA-139531645-1"
 disqusShortname = "kimujinyogi-github-io-1"
 
 [taxonomies]
