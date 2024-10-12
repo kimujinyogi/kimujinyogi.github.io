@@ -8,8 +8,6 @@ theme = "zzo"
 paginate = 5
 disqusShortname = "kimujinyogi-github-io-1"
 
-googleAnalytics = "G-GMEMPMZDNN"
-
 [taxonomies]
   tag = "tags"
 
