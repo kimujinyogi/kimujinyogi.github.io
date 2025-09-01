@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESFP & ENFJ 相性分析レポート</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Harmony -->
+    <!-- Application Structure Plan: The application is designed as a single-page dashboard to provide a comprehensive yet digestible analysis of the ESFP-ENFJ relationship. The structure flows from a high-level visual comparison (radar chart) to specific details, strengths, challenges, and finally, actionable advice. This thematic structure allows users to explore the information at their own pace. The core interaction is a tab-based system for the advice section, enabling users to easily switch between personalized tips for each partner and shared goals. This design was chosen to make complex personality insights accessible and engaging, moving beyond a static report to an exploratory tool. -->
+    <!-- Visualization & Content Choices: 1. Personality Comparison: Goal - Compare core traits visually. Method - Radar chart (Chart.js) to show the 'shape' of each personality across four dichotomies. Interaction - Tooltips on hover. Justification - Provides an immediate, intuitive understanding of their similarities and key differences (S/N, P/J). 2. Strengths/Challenges: Goal - Inform about specific dynamics. Method - Styled HTML cards with icons (Unicode). Interaction - Subtle hover effects. Justification - Breaks down complex ideas into clear, scannable points. 3. Actionable Advice: Goal - Provide targeted guidance. Method - Tabbed content sections (HTML/JS). Interaction - Click to switch views. Justification - This is the most critical part, and making it interactive allows users to focus on the advice most relevant to them at that moment, enhancing usability. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfaf6;
+            color: #4a4a4a;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .tab-btn {
+            transition: all 0.3s ease;
+        }
+        .tab-btn.active {
+            background-color: #d8a783;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .tab-btn:not(.active) {
+            background-color: #f0e9e2;
+            color: #8c7a6b;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fcefe6 0%, #f7e6d7 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-[#b5835a] mb-2">相性分析レポート</h1>
+            <p class="text-lg md:text-xl text-[#6b5b4c]">じゅんちゃん (ESFP-T) & ひらくっち (ENFJ-A)</p>
+        </header>
+
+        <main>
+            <section id="overview" class="mb-12">
+                <div class="gradient-bg rounded-xl shadow-lg p-6 md:p-8 text-center">
+                    <h2 class="text-2xl font-bold text-[#b5835a] mb-4">素晴らしい可能性を秘めたカップル</h2>
+                    <p class="text-[#6b5b4c] leading-relaxed max-w-3xl mx-auto">
+                        エネルギッシュで現実的な「エンターテイナー」のじゅんちゃんと、情熱的で人々を導く「主人公」のひらくっち。お二人は、お互いの世界を広げ、共に成長できる素晴らしい関係です。このレポートでは、お二人の相性の秘密と、さらに良い関係を築くためのヒントを探ります。
+                    </p>
+                </div>
+            </section>
+
+            <section id="comparison" class="mb-12">
+                <h2 class="text-2xl font-bold text-center text-[#b5835a] mb-6">性格タイプの比較</h2>
+                 <p class="text-center text-[#6b5b4c] mb-8 max-w-3xl mx-auto">
+                    お二人の性格の「形」を視覚的に比較してみましょう。外向性(E)と感情(F)という共通の土台を持ちながら、情報の捉え方(S/N)と物事の進め方(P/J)にユニークな違いがあることがわかります。
+                </p>
+                <div class="bg-white rounded-xl shadow-md p-4 sm:p-6">
+                    <div class="chart-container">
+                        <canvas id="personalityChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dynamics" class="grid md:grid-cols-2 gap-8 mb-12">
+                <div id="strengths">
+                    <h2 class="text-2xl font-bold text-center text-[#b5835a] mb-6">相性の良い点 ✨</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-green-500">🤝</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">強い心の繋がり</h3>
+                                <p class="text-gray-600">お二人とも感情豊か(F)で、人の気持ちに敏感です。これにより、言葉にしなくてもお互いを理解し、深く共感し合える強い心の繋がりが生まれます。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-yellow-500">🎉</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">楽しい社交性</h3>
+                                <p class="text-gray-600">共通の外向性(E)により、一緒にイベントに参加したり、友人と過ごしたりすることを楽しむことができます。二人でいると、周りを自然と明るくするエネルギーが生まれます。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-blue-500">🧩</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">互いを補い合う関係</h3>
+                                <p class="text-gray-600">夫の未来志向(N)は、妻の今を大切にする姿勢(S)に新しい視点を与え、妻の柔軟性(P)は、夫の計画性(J)に息抜きの時間を与えます。お互いが最高の補完関係です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="challenges">
+                     <h2 class="text-2xl font-bold text-center text-[#b5835a] mb-6">注意すべき点 🧐</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-red-400">🔭</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">現実(S) vs 理想(N)</h3>
+                                <p class="text-gray-600">妻は「今ここにある具体的な事実」を重視し、夫は「将来の可能性やアイデア」に惹かれます。会話がすれ違っていると感じることがあるかもしれません。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-purple-400">🗺️</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">自由(P) vs 計画(J)</h3>
+                                <p class="text-gray-600">休日の過ごし方などで、 spontaneityを愛する妻と、計画を立てたい夫との間で意見が食い違うことがあります。お互いのスタイルへの理解が必要です。</p>
+                            </div>
+                        </div>
+                         <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4">
+                            <div class="card-icon text-cyan-400">🌪️</div>
+                            <div>
+                                <h3 class="font-bold text-lg text-[#6b5b4c]">ストレスへの反応 (T vs A)</h3>
+                                <p class="text-gray-600">妻(T)はストレスや批判に敏感で安心を求める傾向があり、夫(A)は自信があり、その不安に気づきにくいことがあります。感情的なサポートの差が課題になることも。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advice">
+                <h2 class="text-2xl font-bold text-center text-[#b5835a] mb-2">うまくいくためのコツ</h2>
+                 <p class="text-center text-[#6b5b4c] mb-8 max-w-3xl mx-auto">
+                    お二人の素晴らしい関係をさらに育むための、具体的なアドバイスです。下のボタンをクリックして、それぞれのアドバイスを確認してみてください。
+                </p>
+                <div class="flex justify-center space-x-2 md:space-x-4 mb-6">
+                    <button id="btn-husband" class="tab-btn active text-sm sm:text-base px-4 py-2 rounded-full shadow">ひらくっち(夫)へ</button>
+                    <button id="btn-wife" class="tab-btn text-sm sm:text-base px-4 py-2 rounded-full shadow">じゅんちゃん(妻)へ</button>
+                    <button id="btn-together" class="tab-btn text-sm sm:text-base px-4 py-2 rounded-full shadow">二人のために</button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 min-h-[300px]">
+                    <div id="content-husband" class="advice-content">
+                        <ul class="list-none space-y-4 text-gray-700">
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>妻の「今」を大切にする：</strong>将来の計画も素晴らしいですが、彼女が「今、楽しい！」と感じている瞬間を一緒に味わいましょう。サプライズのデートや、予定のない散歩が喜ばれるはずです。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>具体的な言葉で愛情を伝える：</strong>「君がいると世界が明るくなる」といった抽象的な表現よりも、「今日の笑顔、最高に素敵だったよ」という具体的な言葉が、彼女の心に響きます。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>感情の波に寄り添う：</strong>彼女(T)が不安やストレスを感じている時、解決策を提示する前に「そっか、大変だったね」と、まずは気持ちを受け止めてあげることが、何よりの安心に繋がります。</span></li>
+                        </ul>
+                    </div>
+                    <div id="content-wife" class="advice-content hidden">
+                        <ul class="list-none space-y-4 text-gray-700">
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>夫の「未来」の話に耳を傾ける：</strong>彼が未来の夢や計画を語る時、それは二人への愛情表現の一つです。「素敵な考えだね！」と興味を示すことで、彼の情熱をサポートできます。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>感謝の言葉を積極的に伝える：</strong>彼は人々を導き、喜ばせることに生きがいを感じます。彼がしてくれたことに対して「ありがとう、助かった！」と具体的に伝えることで、彼の自信と愛情はさらに深まります。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>たまには計画に乗ってみる：</strong>彼の計画は、あなたを喜ばせるためのもの。たまには彼に任せてみることで、新しい発見や安心感が得られるかもしれません。</span></li>
+                        </ul>
+                    </div>
+                    <div id="content-together" class="advice-content hidden">
+                        <ul class="list-none space-y-4 text-gray-700">
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>「違い」を最強の武器にする：</strong>現実的な視点と未来的な視点、柔軟性と計画性。これらは対立ではなく、二人で協力すればどんな問題も乗り越えられる最強のツールになります。お互いの意見を尊重し合いましょう。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>コミュニケーションの「質」を高める：</strong>「今週楽しかったこと（Sの視点）」と「来月してみたいこと（Nの視点）」を両方話す時間を作りましょう。お互いの世界を共有することが、理解を深める鍵です。</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3 text-[#d8a783]">💡</span><span><strong>共通の新しい体験をする：</strong>二人で新しい趣味や習い事を始めると、共通の「今」と「未来」が生まれます。一緒に学び、成長する経験は、絆をより一層強くします。</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-12 pt-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500">&copy; 2025 AI Compatibility Insights. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('personalityChart').getContext('2d');
+            const personalityChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['エネルギーの方向 (外向)', '情報の捉え方 (感覚/直観)', '意思決定 (感情)', '外界への接し方 (知覚/判断)'],
+                    datasets: [{
+                        label: 'じゅんちゃん (ESFP)',
+                        data: [1, -1, 1, -1],
+                        backgroundColor: 'rgba(239, 134, 134, 0.2)',
+                        borderColor: 'rgba(239, 134, 134, 1)',
+                        pointBackgroundColor: 'rgba(239, 134, 134, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(239, 134, 134, 1)'
+                    }, {
+                        label: 'ひらくっち (ENFJ)',
+                        data: [1, 1, 1, 1],
+                        backgroundColor: 'rgba(92, 139, 218, 0.2)',
+                        borderColor: 'rgba(92, 139, 218, 1)',
+                        pointBackgroundColor: 'rgba(92, 139, 218, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(92, 139, 218, 1)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                color: '#e0e0e0'
+                            },
+                            grid: {
+                                color: '#e0e0e0'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 11,
+                                    family: "'Noto Sans JP', sans-serif"
+                                },
+                                color: '#555'
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                min: -1.5,
+                                max: 1.5,
+                                stepSize: 1,
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                             labels: {
+                                font: {
+                                    size: 14,
+                                    family: "'Noto Sans JP', sans-serif"
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const a = context.label;
+                                    const v = context.raw;
+                                    let trait = '';
+                                    if (a.includes('感覚/直観')) trait = v > 0 ? '直観(N)' : '感覚(S)';
+                                    else if (a.includes('知覚/判断')) trait = v > 0 ? '判断(J)' : '知覚(P)';
+                                    else if (a.includes('外向')) trait = v > 0 ? '外向(E)' : '内向(I)';
+                                    else if (a.includes('感情')) trait = v > 0 ? '感情(F)' : '思考(T)';
+                                    return label + trait;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            const tabButtons = {
+                husband: document.getElementById('btn-husband'),
+                wife: document.getElementById('btn-wife'),
+                together: document.getElementById('btn-together')
+            };
+            const contentSections = {
+                husband: document.getElementById('content-husband'),
+                wife: document.getElementById('content-wife'),
+                together: document.getElementById('content-together')
+            };
+
+            function switchTab(activeTab) {
+                Object.keys(tabButtons).forEach(key => {
+                    const button = tabButtons[key];
+                    const content = contentSections[key];
+                    if (key === activeTab) {
+                        button.classList.add('active');
+                        content.classList.remove('hidden');
+                    } else {
+                        button.classList.remove('active');
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+
+            tabButtons.husband.addEventListener('click', () => switchTab('husband'));
+            tabButtons.wife.addEventListener('click', () => switchTab('wife'));
+            tabButtons.together.addEventListener('click', () => switchTab('together'));
+        });
+    </script>
+</body>
+</html>
+

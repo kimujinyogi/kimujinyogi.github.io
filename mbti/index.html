@@ -29,10 +29,14 @@
     }
 
     li {
-      margin: 15px 0;
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
     }
 
-    a {
+    a.main-link {
       display: inline-block;
       text-decoration: none;
       font-size: 1.4em;
@@ -44,9 +48,20 @@
       transition: all 0.2s ease;
     }
 
-    a:hover {
+    a.main-link:hover {
       background: #e6f0ff;
       transform: translateY(-2px);
+    }
+
+    a.report-link {
+      font-size: 0.9em;
+      color: #555;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    a.report-link:hover {
+      color: #000;
     }
   </style>
 </head>
@@ -54,8 +69,14 @@
   <h1>MBTI 相性一覧</h1>
   <p class="subtitle">性格診断で見る、友達・家族の相性</p>
   <ul>
-    <li><a href="miho-jinhyuk.html">ミホ＆ジンヒョク</a></li>
-    <li><a href="jun-hiraku.html">じゅんちゃん＆ひらくっち</a></li>
+    <li>
+      <a href="miho-jinhyuk.html" class="main-link">ミホ＆ジンヒョク</a>
+      <a href="miho-jinhyuk-report.html" class="report-link">レポートページ</a>
+    </li>
+    <li>
+      <a href="jun-hiraku.html" class="main-link">じゅんちゃん＆ひらくっち</a>
+      <a href="jun-hiraku-report.html" class="report-link">レポートページ</a>
+    </li>
   </ul>
 </body>
 </html>
