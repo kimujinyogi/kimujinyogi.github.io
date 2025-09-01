@@ -2,77 +2,89 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MBTI 相性一覧</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(to bottom right, #f0f4ff, #e6f7ff);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #f8fbff;
       color: #333;
-      text-align: center;
-      padding: 40px;
+      margin: 0;
+      padding: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+      text-align: center;
     }
 
     p.subtitle {
-      font-size: 1.2em;
-      color: #555;
-      margin-bottom: 30px;
+      font-size: 1rem;
+      color: #666;
+      text-align: center;
+      margin: 0 0 25px;
     }
 
     ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     li {
-      margin: 30px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin-bottom: 24px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
 
     a.main-link {
-      display: inline-block;
+      display: block;
       text-decoration: none;
-      font-size: 1.4em;
-      color: #0066cc;
-      background: #fff;
-      padding: 12px 24px;
+      font-size: 1.2rem;
+      color: #007aff;
+      text-align: center;
+      padding: 12px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: all 0.2s ease;
-      margin-bottom: 8px;
+      background: #f0f7ff;
+      font-weight: 600;
+      transition: background 0.2s ease;
     }
 
-    a.main-link:hover {
-      background: #e6f0ff;
-      transform: translateY(-2px);
+    a.main-link:active {
+      background: #e0efff;
     }
 
     .sub-links {
       display: flex;
-      gap: 15px;
-      font-size: 0.95em;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px;
+      font-size: 0.95rem;
     }
 
     .sub-links a {
-      color: #555;
-      text-decoration: underline;
-      cursor: pointer;
-      transition: color 0.2s ease;
+      color: #007aff;
+      text-decoration: none;
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: rgba(0,122,255,0.1);
+      transition: background 0.2s ease;
     }
 
-    .sub-links a:hover {
-      color: #000;
+    .sub-links a:active {
+      background: rgba(0,122,255,0.2);
     }
 
     .audio-player {
       margin-top: 10px;
       display: none;
+      width: 100%;
     }
   </style>
 </head>
@@ -102,11 +114,25 @@
     function playAudio(file, linkElement) {
       const parentLi = linkElement.closest('li');
       const audioPlayer = parentLi.querySelector('.audio-player');
-      audioPlayer.src = file;
-      audioPlayer.style.display = 'block';
-      audioPlayer.play();
+
+      // すでに再生中のプレイヤーを全て閉じる
+      document.querySelectorAll('.audio-player').forEach(ap => {
+        if (ap !== audioPlayer) {
+          ap.pause();
+          ap.style.display = 'none';
+        }
+      });
+
+      // 選択されたプレイヤーを開く
+      if (audioPlayer.style.display === 'block') {
+        audioPlayer.pause();
+        audioPlayer.style.display = 'none';
+      } else {
+        audioPlayer.src = file;
+        audioPlayer.style.display = 'block';
+        audioPlayer.play();
+      }
     }
   </script>
 </body>
 </html>
-
