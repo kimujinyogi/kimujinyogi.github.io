@@ -29,11 +29,10 @@
     }
 
     li {
-      margin: 20px 0;
+      margin: 30px 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      gap: 10px;
     }
 
     a.main-link {
@@ -46,6 +45,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.2s ease;
+      margin-bottom: 8px;
     }
 
     a.main-link:hover {
@@ -53,15 +53,26 @@
       transform: translateY(-2px);
     }
 
-    a.report-link {
-      font-size: 0.9em;
+    .sub-links {
+      display: flex;
+      gap: 15px;
+      font-size: 0.95em;
+    }
+
+    .sub-links a {
       color: #555;
       text-decoration: underline;
+      cursor: pointer;
       transition: color 0.2s ease;
     }
 
-    a.report-link:hover {
+    .sub-links a:hover {
       color: #000;
+    }
+
+    .audio-player {
+      margin-top: 10px;
+      display: none;
     }
   </style>
 </head>
@@ -71,13 +82,31 @@
   <ul>
     <li>
       <a href="miho-jinhyuk.html" class="main-link">ミホ＆ジンヒョク</a>
-      <a href="miho-jinhyuk-report.html" class="report-link">レポートページ</a>
+      <div class="sub-links">
+        <a href="miho-jinhyuk-report.html">詳細レポート</a>
+        <a onclick="playAudio('miho-jinhyuk.mp3', this)">音声解説</a>
+      </div>
+      <audio class="audio-player" controls></audio>
     </li>
     <li>
       <a href="jun-hiraku.html" class="main-link">じゅんちゃん＆ひらくっち</a>
-      <a href="jun-hiraku-report.html" class="report-link">レポートページ</a>
+      <div class="sub-links">
+        <a href="jun-hiraku-report.html">詳細レポート</a>
+        <a onclick="playAudio('jun-hiraku.mp3', this)">音声解説</a>
+      </div>
+      <audio class="audio-player" controls></audio>
     </li>
   </ul>
+
+  <script>
+    function playAudio(file, linkElement) {
+      const parentLi = linkElement.closest('li');
+      const audioPlayer = parentLi.querySelector('.audio-player');
+      audioPlayer.src = file;
+      audioPlayer.style.display = 'block';
+      audioPlayer.play();
+    }
+  </script>
 </body>
 </html>
 
