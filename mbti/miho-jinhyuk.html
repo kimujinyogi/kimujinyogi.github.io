@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESFJ & INTP 関係性分析レポート</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: このSPAは、ユーザーがお二人の関係性を直感的に理解し、具体的な行動に移せるよう、物語的な流れで構成されています。まず最初にレーダーチャートで全体像を視覚的に提示し、次に「対立点」と「強み」を具体的に解説。そして最も重要な「実践的アドバイス」と、最後に「シナリオシミュレーター」というインタラクティブなツールを配置しました。この「理解→分析→実践→体験」という流れは、情報を一方的に提供するのではなく、ユーザーが自ら学び、試すことを促すための設計です。これにより、単なる診断結果の閲覧に終わらない、深い洞察と行動変容のきっかけを提供することを目的としています。 -->
+    <!-- Visualization & Content Choices: 
+        - [MBTI特性比較] -> [目標: 比較/情報提供] -> [方法: レーダーチャート] -> [インタラクション: なし、視覚的比較に特化] -> [理由: 4つの相反する特性を一つのグラフで直感的に対比させ、違いの大きさを一目で理解させるため。] -> [ライブラリ: Chart.js (Canvas)]
+        - [対立点/強み/アドバイス] -> [目標: 整理/情報提供] -> [方法: アイコン付きカードレイアウト] -> [インタラクション: なし、可読性を重視] -> [理由: 情報をテーマごとに区切り、視覚的に消化しやすくするため。アイコンが内容の理解を助ける。] -> [方法: HTML/CSS (Tailwind)]
+        - [実践的な状況対応] -> [目標: エンゲージメント/実演] -> [方法: ドロップダウン選択式シナリオシミュレーター] -> [インタラクション: ユーザーがシナリオを選択すると、関連する3つの視点（妻、夫、解決策）が動的に表示される。] -> [理由: 理論的なアドバイスを具体的な日常のシチュエーションに落とし込み、解決策を疑似体験させることで、学習効果と実践への意欲を高めるため。] -> [方法: Vanilla JavaScript] -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #FDFBF8;
+            color: #4a4a4a;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-nav {
+            transition: all 0.3s ease;
+        }
+        .btn-nav.active {
+            background-color: #8D7B68;
+            color: #ffffff;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-6xl">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-[#6B4F4F]">関係性分析レポート</h1>
+            <p class="text-lg md:text-xl text-[#A87C7C] mt-2">ESFJ-A (妻) & INTP-T (夫)</p>
+        </header>
+
+        <nav class="flex justify-center mb-10 bg-white/50 rounded-full shadow-sm p-2 backdrop-blur-sm sticky top-2 z-10">
+            <button data-target="intro" class="btn-nav active text-sm md:text-base font-semibold text-gray-600 py-2 px-4 md:px-6 rounded-full">はじめに</button>
+            <button data-target="advice" class="btn-nav text-sm md:text-base font-semibold text-gray-600 py-2 px-4 md:px-6 rounded-full">実践アドバイス</button>
+            <button data-target="simulator" class="btn-nav text-sm md:text-base font-semibold text-gray-600 py-2 px-4 md:px-6 rounded-full">シナリオ体験</button>
+        </nav>
+
+        <main>
+            <section id="intro" class="content-section active">
+                <div class="text-center mb-12 p-6 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#4E6C50] mb-4">全く異なる、だからこそ補い合える二人</h2>
+                    <p class="text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                        社交的で思いやり深い「領事官」タイプの奥様 (ESFJ) と、論理的で探究心旺盛な「論理学者」タイプの旦那様 (INTP)。お二人は、物事の捉え方から意思決定の方法まで、多くの点で対照的です。このレポートは、その「違い」を深く理解し、お互いの強みを活かしながら、より豊かで幸せな関係を築くための羅針盤となることを目指しています。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+                    <div class="p-6 rounded-2xl glassmorphism shadow-md">
+                        <div class="chart-container">
+                            <canvas id="compatibilityChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-xl bg-white/70 shadow">
+                            <h3 class="font-bold text-lg text-teal-700">【対立しやすいポイント】</h3>
+                            <p class="mt-1 text-gray-700"><strong>コミュニケーション：</strong>感情表現豊かな妻 vs 論理で話す夫。気持ちのすれ違いが起きやすいかもしれません。</p>
+                            <p class="mt-1 text-gray-700"><strong>生活スタイル：</strong>計画的で整理整頓を好む妻 vs 自由でマイペースな夫。休日の過ごし方や家事で衝突の可能性が。</p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-white/70 shadow">
+                            <h3 class="font-bold text-lg text-amber-700">【お互いを補い合える強み】</h3>
+                            <p class="mt-1 text-gray-700"><strong>現実と理想のバランス：</strong>妻の現実的な視点が、夫の抽象的なアイデアを形にする手助けをします。</p>
+                            <p class="mt-1 text-gray-700"><strong>内外の世界を繋ぐ：</strong>夫のユニークな視点が妻の世界を広げ、妻の社交性が夫と社会を繋ぐ架け橋になります。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advice" class="content-section">
+                 <div class="text-center mb-12 p-6 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#4E6C50] mb-4">違いを乗り越え、絆を深めるために</h2>
+                    <p class="text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                        お互いの「当たり前」が違うことを理解し、少しの思いやりと工夫を重ねることが、心地よい関係への鍵となります。ここでは、明日から実践できる具体的なヒントをご紹介します。
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white/80 p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-center mb-6 text-[#A87C7C]">夫 (INTP) へのアドバイス</h3>
+                        <ul class="space-y-5">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">💖</span>
+                                <div>
+                                    <h4 class="font-semibold">感情を「事実」として受け止める</h4>
+                                    <p class="text-gray-600">妻の感情的な反応を論理で分析するのではなく、「彼女は今、そう感じている」という事実として受け止め、寄り添う姿勢を見せましょう。「そう感じたんだね」の一言が大切です。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">🗣️</span>
+                                <div>
+                                    <h4 class="font-semibold">感謝と愛情を言葉にする</h4>
+                                    <p class="text-gray-600">妻は言葉での愛情表現を大切にします。当たり前だと思っていることでも「ありがとう」「助かるよ」と具体的に言葉で伝える習慣をつけましょう。効果は絶大です。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">🗓️</span>
+                                <div>
+                                    <h4 class="font-semibold">小さな約束や計画を尊重する</h4>
+                                    <p class="text-gray-600">妻にとって計画は安心の源です。たとえ小さな予定でも、それを尊重し、一緒に楽しむ姿勢を見せることで、彼女に大きな安心感と愛情を伝えることができます。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white/80 p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-center mb-6 text-[#4E6C50]">妻 (ESFJ) へのアドバイス</h3>
+                        <ul class="space-y-5">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">💡</span>
+                                <div>
+                                    <h4 class="font-semibold">一人の時間と空間を尊重する</h4>
+                                    <p class="text-gray-600">夫にとって一人の時間は、スマホの充電と同じくらい必要不可欠です。彼の趣味や思考の時間を「邪魔しないであげる」ことも、大切な愛情表現の一つです。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">🎯</span>
+                                <div>
+                                    <h4 class="font-semibold">要望は「具体的」に伝える</h4>
+                                    <p class="text-gray-600">「察してほしい」は彼に最も伝わりにくいサインです。「〇〇してほしいな」と具体的に、そして穏やかに伝えることで、彼は何をすべきか理解し、行動しやすくなります。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">🧠</span>
+                                <div>
+                                    <h4 class="font-semibold">彼の「論理」を問題解決のツールと捉える</h4>
+                                    <p class="text-gray-600">感情的な共感は苦手でも、問題解決能力は非常に高いのが彼の強みです。彼の冷静な分析を「冷たい」と捉えず、問題を乗り越えるための「頼れる武器」と考えてみましょう。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 bg-white/80 p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold text-center mb-6 text-[#8D7B68]">二人で取り組むこと</h3>
+                    <ul class="space-y-4 max-w-2xl mx-auto">
+                        <li class="flex items-start">
+                            <span class="text-xl mr-3">🤝</span>
+                            <p><strong>「違い」を面白がる：</strong>お互いの反応の違いを「正しさ」で判断せず、「そういう考え方もあるんだ！」と発見として楽しむ姿勢を持つ。</p>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-xl mr-3">📅</span>
+                            <p><strong>週に一度の「作戦会議」：</strong>週末の予定や家事分担など、事務的なことを話す時間を設ける。これにより、J型（妻）は安心し、P型（夫）は突然の要求から解放される。</p>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-xl mr-3">❤️</span>
+                            <p><strong>お互いの「愛情表現」を学ぶ：</strong>妻は「感謝の言葉」、夫は「静かに隣にいる時間」など、相手が心地よいと感じる愛情表現を意識的に行ってみる。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="simulator" class="content-section">
+                <div class="text-center mb-12 p-6 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#4E6C50] mb-4">日常のワンシーンをシミュレーション</h2>
+                    <p class="text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                        よくある状況で、お二人の思考はどのように働くでしょうか？下のメニューからシナリオを選んで、すれ違いのメカニズムと、理想的な解決策を覗いてみましょう。
+                    </p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-6">
+                        <label for="scenario-select" class="block text-sm font-medium text-gray-700 mb-2">シナリオを選択してください：</label>
+                        <select id="scenario-select" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#8D7B68] focus:border-[#8D7B68] transition">
+                            <option value="weekend">週末の予定を立てるとき</option>
+                            <option value="stress">仕事で疲れて帰宅したとき</option>
+                            <option value="decision">大きな買い物を決めるとき</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="p-5 rounded-xl bg-white/70 shadow-md">
+                            <h4 class="font-bold text-lg text-[#A87C7C]">妻 (ESFJ) の視点</h4>
+                            <p id="esfj-perspective" class="mt-2 text-gray-700"></p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-white/70 shadow-md">
+                            <h4 class="font-bold text-lg text-[#4E6C50]">夫 (INTP) の視点</h4>
+                            <p id="intp-perspective" class="mt-2 text-gray-700"></p>
+                        </div>
+                        <div class="sm:col-span-2 p-5 rounded-xl bg-[#E4EFE7] shadow-lg border border-green-200">
+                            <h4 class="font-bold text-lg text-[#3A5A40]">💡 理想的な着地点</h4>
+                            <p id="solution" class="mt-2 text-gray-800"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-12 pt-8 border-t border-gray-200">
+            <p class="text-gray-500">このレポートが、お二人の素晴らしい関係をさらに深める一助となれば幸いです。</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chartCtx = document.getElementById('compatibilityChart').getContext('2d');
+            const compatibilityChart = new Chart(chartCtx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        '社交性・共感力 (E, F)',
+                        '現実性・計画性 (S, J)',
+                        '論理・分析力 (T)',
+                        '探求心・柔軟性 (N, P)'
+                    ],
+                    datasets: [{
+                        label: '妻 (ESFJ)',
+                        data: [9, 9, 3, 2],
+                        backgroundColor: 'rgba(239, 154, 154, 0.2)',
+                        borderColor: 'rgba(239, 154, 154, 1)',
+                        pointBackgroundColor: 'rgba(239, 154, 154, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(239, 154, 154, 1)',
+                        borderWidth: 2
+                    }, {
+                        label: '夫 (INTP)',
+                        data: [2, 2, 9, 9],
+                        backgroundColor: 'rgba(77, 182, 172, 0.2)',
+                        borderColor: 'rgba(77, 182, 172, 1)',
+                        pointBackgroundColor: 'rgba(77, 182, 172, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(77, 182, 172, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 11
+                                },
+                                color: '#4a4a4a'
+                            },
+                            ticks: {
+                                backdropColor: 'transparent',
+                                stepSize: 2,
+                                display: false
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 10
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                             labels: {
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        },
+                        tooltip: {
+                             enabled: true
+                        }
+                    }
+                }
+            });
+
+            const scenarios = {
+                weekend: {
+                    esfj: '「週末は友達家族とBBQしない？準備も楽しいし、みんなでワイワイしたいな！」と、人と繋がる具体的な計画を立てたい。',
+                    intp: '「週末は家で静かに過ごしたいな。溜まってる本も読みたいし、新しいプログラミング言語も試したい。」と、一人の知的な時間を優先したい。',
+                    solution: '土曜の午後は一緒にBBQに参加し、日曜はそれぞれが自由に過ごす時間にする。妻は社交のニーズを満たし、夫は一人の時間を確保できる。'
+                },
+                stress: {
+                    esfj: '「今日、職場で大変だったの！話を聞いてほしい…」と、共感と慰めを求めて、気持ちを共有したい。',
+                    intp: '疲れているので誰とも話さず、自分の世界に没頭してエネルギーを回復させたい。妻の話が問題解決を求められているように感じ、さらに疲れてしまう。',
+                    solution: '妻は「解決策はいらないから、うんうんって聞いてくれるだけで嬉しい」と伝え、夫は「まず30分だけ静かにさせて」と自分のニーズを伝える。その後、夫は妻の話を聞く時間を作る。'
+                },
+                decision: {
+                    esfj: '「このソファ、部屋の雰囲気に合うし、座り心地も良くて素敵！みんなが来た時も喜んでくれそう！」と、デザインや周りの評価、居心地の良さを重視する。',
+                    intp: '「このソファの素材は何か？耐久性は？コストパフォーマンスは？もっと機能的な選択肢はないか？」と、スペック、論理的な妥当性、効率を徹底的に分析する。',
+                    solution: '夫が機能やスペックで選択肢を3つに絞り、その中から妻がデザインや雰囲気で最終決定する。お互いの強みを活かした共同作業にする。'
+                }
+            };
+
+            const scenarioSelect = document.getElementById('scenario-select');
+            const esfjPerspective = document.getElementById('esfj-perspective');
+            const intpPerspective = document.getElementById('intp-perspective');
+            const solution = document.getElementById('solution');
+
+            function updateScenario(scenarioKey) {
+                esfjPerspective.textContent = scenarios[scenarioKey].esfj;
+                intpPerspective.textContent = scenarios[scenarioKey].intp;
+                solution.textContent = scenarios[scenarioKey].solution;
+            }
+
+            scenarioSelect.addEventListener('change', (event) => {
+                updateScenario(event.target.value);
+            });
+
+            updateScenario('weekend');
+            
+            const navButtons = document.querySelectorAll('.btn-nav');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    contentSections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                     window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
