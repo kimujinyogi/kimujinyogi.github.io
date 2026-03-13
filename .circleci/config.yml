@@ -1,10 +1,7 @@
-version: 2
+version: 2.1
+
 jobs:
   build:
-    branches:
-      only:
-        #- master
-        - campcar
     docker:
       - image: cibuilds/hugo:latest
     steps:
@@ -18,4 +15,59 @@ jobs:
       - deploy:
           name: Deploy to GitHub Pages
           command: |
-              ./.circleci/deploy.sh
+            ./.circleci/deploy.sh
+
+  fetch-and-build:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "0a:c8:50:24:aa:25:82:e6:fe:e7:88:d4:d3:db:f9:79"
+      - checkout
+      - run:
+          name: Install Hugo
+          command: |
+            HUGO_VERSION=0.121.0
+            wget -q "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -O /tmp/hugo.tar.gz
+            tar -xzf /tmp/hugo.tar.gz -C /tmp
+            sudo mv /tmp/hugo /usr/local/bin/hugo
+            hugo version
+      - run:
+          name: Install Python dependencies
+          command: pip install -r scripts/requirements.txt
+      - run:
+          name: Fetch IT news and generate Markdown
+          command: python scripts/fetch_news.py
+      - run:
+          name: Commit generated news pages
+          command: |
+            git config --global user.email kimujinyogi_circle@gmail.com
+            git config --global user.name "$CIRCLE_USERNAME"
+            git add campcar/content/news/
+            git diff --cached --quiet || git commit -m "Auto: ITニュース更新 $(TZ=Asia/Tokyo date '+%Y-%m-%d') [ci skip]"
+            git push origin campcar || true
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: |
+            ./.circleci/deploy.sh
+
+workflows:
+  # 既存: campcar ブランチ push 時
+  on-push:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: campcar
+
+  # 新規: 毎朝4時 JST (= 19:00 UTC)
+  daily-news:
+    triggers:
+      - schedule:
+          cron: "0 19 * * *"
+          filters:
+            branches:
+              only: campcar
+    jobs:
+      - fetch-and-build
