@@ -28,6 +28,16 @@ RSS_SOURCES = [
     },
 ]
 
+IOS_SOURCES = [
+    {"url": "https://developer.apple.com/news/rss/news.rss", "name": "Apple Dev"},
+    {"url": "https://www.hackingwithswift.com/articles/rss",  "name": "HackingWithSwift"},
+    {"url": "https://www.swiftbysundell.com/feed.rss",        "name": "SwiftBySundell"},
+    {"url": "https://9to5mac.com/feed/",                      "name": "9to5Mac"},
+]
+
+IOS_KEYWORDS = ["iOS", "Swift", "SwiftUI", "Xcode", "App Store", "iPhone", "UIKit"]
+VISIONPRO_KEYWORDS = ["Vision Pro", "visionOS", "spatial computing", "RealityKit", "ARKit", "ビジョンプロ"]
+
 CONTENT_NEWS_DIR = Path(__file__).parent.parent / "campcar" / "content" / "news"
 TOP_N = 20
 
@@ -82,6 +92,48 @@ def collect_all_entries(hours: int = 24) -> list[dict]:
     return all_entries
 
 
+def collect_ios_entries(hours: int = 24) -> list[dict]:
+    """iOS専用RSSソースからエントリを収集し、重複排除して返す。"""
+    since = datetime.now(tz=timezone.utc) - timedelta(hours=hours)
+    seen_urls: set[str] = set()
+    all_entries: list[dict] = []
+
+    for source in IOS_SOURCES:
+        try:
+            entries = fetch_entries(source, since)
+            for entry in entries:
+                url = entry["url"]
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    all_entries.append(entry)
+        except Exception as e:
+            print(f"[WARNING] {source['name']} の取得に失敗: {e}")
+
+    return all_entries
+
+
+def filter_by_keywords(entries: list[dict], keywords: list[str]) -> list[dict]:
+    """タイトルにキーワードを含むエントリを返す（大文字小文字を区別しない）。"""
+    lower_keywords = [kw.lower() for kw in keywords]
+    result = []
+    for entry in entries:
+        title_lower = entry["title"].lower()
+        if any(kw in title_lower for kw in lower_keywords):
+            result.append(entry)
+    return result
+
+
+def deduplicate(entries: list[dict]) -> list[dict]:
+    """URLで重複を排除する。先に出現したエントリを優先する。"""
+    seen_urls: set[str] = set()
+    result = []
+    for entry in entries:
+        if entry["url"] not in seen_urls:
+            seen_urls.add(entry["url"])
+            result.append(entry)
+    return result
+
+
 def build_ranking_md(entries: list[dict], title: str, date_str: str) -> str:
     """ランキング Markdown 文字列を組み立てる。"""
     lines = [
@@ -96,8 +148,47 @@ def build_ranking_md(entries: list[dict], title: str, date_str: str) -> str:
         "",
     ]
     for i, entry in enumerate(entries, 1):
-        safe_title = entry["title"].replace('"', """)
+        safe_title = entry["title"].replace('"', '\u201d')
         lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
+
+    lines.append("")
+    return "\n".join(lines)
+
+
+def build_daily_md(
+    general: list[dict],
+    ios_entries: list[dict],
+    vp_entries: list[dict],
+    title: str,
+    date_str: str,
+) -> str:
+    """3セクション（IT全般・iOS・Vision Pro）を含む日次 Markdown を組み立てる。"""
+    lines = [
+        "---",
+        f'title: "{title}"',
+        f"date: {date_str}",
+        'type: "news"',
+        "draft: false",
+        "---",
+        "",
+        f"## 今日のITニュース TOP{len(general)}",
+        "",
+    ]
+    for i, entry in enumerate(general, 1):
+        safe_title = entry["title"].replace('"', '\u201d')
+        lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
+
+    if ios_entries:
+        lines += ["", "## iOSニュース", ""]
+        for i, entry in enumerate(ios_entries, 1):
+            safe_title = entry["title"].replace('"', '\u201d')
+            lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
+
+    if vp_entries:
+        lines += ["", "## Vision Pro ニュース", ""]
+        for i, entry in enumerate(vp_entries, 1):
+            safe_title = entry["title"].replace('"', '\u201d')
+            lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
 
     lines.append("")
     return "\n".join(lines)
@@ -117,7 +208,7 @@ def build_weekly_md(entries: list[dict], title: str, date_str: str) -> str:
         "",
     ]
     for i, entry in enumerate(entries, 1):
-        safe_title = entry["title"].replace('"', """)
+        safe_title = entry["title"].replace('"', '\u201d')
         lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
 
     lines.append("")
@@ -129,21 +220,29 @@ def write_daily(now: datetime) -> None:
     date_label = now.strftime("%Y-%m-%d")
     date_iso = now.strftime("%Y-%m-%dT04:00:00+09:00")
 
-    entries = collect_all_entries(hours=24)
-    entries = entries[:TOP_N]
+    # 1. IT全般エントリ
+    general = collect_all_entries(hours=24)[:TOP_N]
 
-    if not entries:
+    if not general:
         print("[INFO] 今日のエントリが0件のため、daily ページをスキップします。")
         return
 
+    # 2. iOSエントリ = iOS専用RSS ＋ 全ソースのキーワードフィルタ
+    ios_from_sources = collect_ios_entries(hours=24)
+    ios_from_keywords = filter_by_keywords(collect_all_entries(hours=24), IOS_KEYWORDS)
+    ios_entries = deduplicate(ios_from_sources + ios_from_keywords)[:15]
+
+    # 3. Vision Proエントリ = 全ソース（general + ios）のキーワードフィルタ
+    vp_entries = filter_by_keywords(general + ios_entries, VISIONPRO_KEYWORDS)[:10]
+
     title = f"{date_label} ITニュースランキング"
-    content = build_ranking_md(entries, title, date_iso)
+    content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
 
     out_dir = CONTENT_NEWS_DIR / date_label
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "index.md"
     out_path.write_text(content, encoding="utf-8")
-    print(f"[INFO] 書き込み完了: {out_path} ({len(entries)}件)")
+    print(f"[INFO] 書き込み完了: {out_path} (IT全般:{len(general)}件, iOS:{len(ios_entries)}件, VisionPro:{len(vp_entries)}件)")
 
 
 def write_weekly(now: datetime) -> None:
