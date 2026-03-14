@@ -26,14 +26,6 @@ jobs:
             - "0a:c8:50:24:aa:25:82:e6:fe:e7:88:d4:d3:db:f9:79"
       - checkout
       - run:
-          name: Install Hugo
-          command: |
-            HUGO_VERSION=0.121.0
-            wget -q "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -O /tmp/hugo.tar.gz
-            tar -xzf /tmp/hugo.tar.gz -C /tmp
-            sudo mv /tmp/hugo /usr/local/bin/hugo
-            hugo version
-      - run:
           name: Install Python dependencies
           command: pip install -r scripts/requirements.txt
       - run:
@@ -47,10 +39,6 @@ jobs:
             git add campcar/content/news/
             git diff --cached --quiet || git commit -m "Auto: ITニュース更新 $(TZ=Asia/Tokyo date '+%Y-%m-%d') [ci skip]"
             git push origin campcar || true
-      - deploy:
-          name: Deploy to GitHub Pages
-          command: |
-            ./.circleci/deploy.sh
 
 workflows:
   # 既存: campcar ブランチ push 時
