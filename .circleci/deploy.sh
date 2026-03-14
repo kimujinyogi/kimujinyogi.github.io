@@ -24,7 +24,9 @@ cd campcar
 
 HUGO_ENV=production hugo -v
 
-rsync -arv --delete ./public/* ../../
+# rsync の代替: publicの内容を deploy root にコピー（.git と deploy ディレクトリは除外）
+find ../../ -maxdepth 1 -mindepth 1 ! -name '.git' ! -name 'deploy' -exec rm -rf {} +
+cp -r ./public/. ../../
 
 cd ../..
 
