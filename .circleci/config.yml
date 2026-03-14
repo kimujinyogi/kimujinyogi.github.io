@@ -43,7 +43,7 @@ jobs:
           name: Commit generated news pages
           command: |
             git config --global user.email kimujinyogi_circle@gmail.com
-            git config --global user.name "$CIRCLE_USERNAME"
+            git config --global user.name "CircleCI Bot"
             git add campcar/content/news/
             git diff --cached --quiet || git commit -m "Auto: ITニュース更新 $(TZ=Asia/Tokyo date '+%Y-%m-%d') [ci skip]"
             git push origin campcar || true
