@@ -59,3 +59,6 @@ workflows:
               only: campcar
     jobs:
       - fetch-and-build
+      - build:
+          requires:
+            - fetch-and-build
