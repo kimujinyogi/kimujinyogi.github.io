@@ -1,0 +1,236 @@
+{
+  "categories": [
+    { "id": "drink",   "label": "のみもの", "color": "#4FC3F7" },
+    { "id": "food",    "label": "たべもの", "color": "#81C784" },
+    { "id": "play",    "label": "あそび",   "color": "#FFB74D" },
+    { "id": "place",   "label": "ばしょ",   "color": "#CE93D8" },
+    { "id": "feeling", "label": "きもち",   "color": "#F48FB1" }
+  ],
+  "cards": [
+    {
+      "id": "mizu",
+      "label": "みず",
+      "category": "drink",
+      "tags": ["のみもの", "つめたい"],
+      "image": null,
+      "sound": null,
+      "speechText": "みず"
+    },
+    {
+      "id": "mugicha",
+      "label": "むぎちゃ",
+      "category": "drink",
+      "tags": ["のみもの", "つめたい", "おちゃ"],
+      "image": null,
+      "sound": null,
+      "speechText": "むぎちゃ"
+    },
+    {
+      "id": "juice",
+      "label": "ジュース",
+      "category": "drink",
+      "tags": ["のみもの", "あまい"],
+      "image": null,
+      "sound": null,
+      "speechText": "ジュース"
+    },
+    {
+      "id": "gyunyu",
+      "label": "ぎゅうにゅう",
+      "category": "drink",
+      "tags": ["のみもの", "しろい"],
+      "image": null,
+      "sound": null,
+      "speechText": "ぎゅうにゅう"
+    },
+    {
+      "id": "gohan",
+      "label": "ごはん",
+      "category": "food",
+      "tags": ["たべもの", "しろい"],
+      "image": null,
+      "sound": null,
+      "speechText": "ごはん"
+    },
+    {
+      "id": "pan",
+      "label": "パン",
+      "category": "food",
+      "tags": ["たべもの", "あさごはん"],
+      "image": null,
+      "sound": null,
+      "speechText": "パン"
+    },
+    {
+      "id": "udon",
+      "label": "うどん",
+      "category": "food",
+      "tags": ["たべもの", "めん"],
+      "image": null,
+      "sound": null,
+      "speechText": "うどん"
+    },
+    {
+      "id": "ringo",
+      "label": "りんご",
+      "category": "food",
+      "tags": ["たべもの", "くだもの", "あかい"],
+      "image": null,
+      "sound": null,
+      "speechText": "りんご"
+    },
+    {
+      "id": "banana",
+      "label": "バナナ",
+      "category": "food",
+      "tags": ["たべもの", "くだもの", "きいろい"],
+      "image": null,
+      "sound": null,
+      "speechText": "バナナ"
+    },
+    {
+      "id": "ice",
+      "label": "アイス",
+      "category": "food",
+      "tags": ["たべもの", "つめたい", "あまい"],
+      "image": null,
+      "sound": null,
+      "speechText": "アイスクリーム"
+    },
+    {
+      "id": "buranko",
+      "label": "ブランコ",
+      "category": "play",
+      "tags": ["あそび", "こうえん"],
+      "image": null,
+      "sound": null,
+      "speechText": "ブランコ"
+    },
+    {
+      "id": "suberidai",
+      "label": "すべりだい",
+      "category": "play",
+      "tags": ["あそび", "こうえん"],
+      "image": null,
+      "sound": null,
+      "speechText": "すべりだい"
+    },
+    {
+      "id": "ball",
+      "label": "ボール",
+      "category": "play",
+      "tags": ["あそび", "そとあそび"],
+      "image": null,
+      "sound": null,
+      "speechText": "ボール"
+    },
+    {
+      "id": "ehon",
+      "label": "えほん",
+      "category": "play",
+      "tags": ["あそび", "うちあそび"],
+      "image": null,
+      "sound": null,
+      "speechText": "えほん"
+    },
+    {
+      "id": "terebi",
+      "label": "テレビ",
+      "category": "play",
+      "tags": ["あそび", "うちあそび"],
+      "image": null,
+      "sound": null,
+      "speechText": "テレビ"
+    },
+    {
+      "id": "ouchi",
+      "label": "おうち",
+      "category": "place",
+      "tags": ["ばしょ", "いえ"],
+      "image": null,
+      "sound": null,
+      "speechText": "おうち"
+    },
+    {
+      "id": "kouen",
+      "label": "こうえん",
+      "category": "place",
+      "tags": ["ばしょ", "そと"],
+      "image": null,
+      "sound": null,
+      "speechText": "こうえん"
+    },
+    {
+      "id": "super",
+      "label": "スーパー",
+      "category": "place",
+      "tags": ["ばしょ", "かいもの"],
+      "image": null,
+      "sound": null,
+      "speechText": "スーパー"
+    },
+    {
+      "id": "toire",
+      "label": "トイレ",
+      "category": "place",
+      "tags": ["ばしょ", "おてあらい"],
+      "image": null,
+      "sound": null,
+      "speechText": "トイレ"
+    },
+    {
+      "id": "kuruma",
+      "label": "くるま",
+      "category": "place",
+      "tags": ["ばしょ", "のりもの", "おでかけ"],
+      "image": null,
+      "sound": null,
+      "speechText": "くるま"
+    },
+    {
+      "id": "ureshii",
+      "label": "うれしい",
+      "category": "feeling",
+      "tags": ["きもち", "たのしい"],
+      "image": null,
+      "sound": null,
+      "speechText": "うれしい"
+    },
+    {
+      "id": "kanashii",
+      "label": "かなしい",
+      "category": "feeling",
+      "tags": ["きもち"],
+      "image": null,
+      "sound": null,
+      "speechText": "かなしい"
+    },
+    {
+      "id": "itai",
+      "label": "いたい",
+      "category": "feeling",
+      "tags": ["きもち", "からだ"],
+      "image": null,
+      "sound": null,
+      "speechText": "いたい"
+    },
+    {
+      "id": "onakasukita",
+      "label": "おなかすいた",
+      "category": "feeling",
+      "tags": ["きもち", "おなか", "たべたい"],
+      "image": null,
+      "sound": null,
+      "speechText": "おなかすいた"
+    },
+    {
+      "id": "nemui",
+      "label": "ねむい",
+      "category": "feeling",
+      "tags": ["きもち", "ねたい"],
+      "image": null,
+      "sound": null,
+      "speechText": "ねむい"
+    }
+  ]
+}

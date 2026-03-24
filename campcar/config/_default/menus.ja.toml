@@ -41,6 +41,12 @@
   weight = 5
 
 [[main]]
+  identifier = "kotobacards"
+  name = "ことばカード"
+  url = "/kotobacards/"
+  weight = 6
+
+[[main]]
   identifier = "Privacy"
   name = "プライバシーポリシー"
   url = "privacy/"
