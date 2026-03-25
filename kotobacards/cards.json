@@ -48,7 +48,7 @@
       "label": "ごはん",
       "category": "food",
       "tags": ["たべもの", "しろい"],
-      "image": null,
+      "image": "images/gohan.jpg",
       "sound": null,
       "speechText": "ごはん"
     },
@@ -57,7 +57,7 @@
       "label": "パン",
       "category": "food",
       "tags": ["たべもの", "あさごはん"],
-      "image": null,
+      "image": "images/pan.jpg",
       "sound": null,
       "speechText": "パン"
     },
@@ -87,6 +87,15 @@
       "image": null,
       "sound": null,
       "speechText": "バナナ"
+    },
+    {
+      "id": "naget",
+      "label": "ナゲット",
+      "category": "food",
+      "tags": ["たべもの", "とりにく"],
+      "image": "images/naget.jpg",
+      "sound": null,
+      "speechText": "ナゲット"
     },
     {
       "id": "ice",
@@ -132,6 +141,15 @@
       "image": null,
       "sound": null,
       "speechText": "えほん"
+    },
+    {
+      "id": "senpuuki",
+      "label": "せんぷうき",
+      "category": "play",
+      "tags": ["あそび", "あつい", "かぜ"],
+      "image": "images/senpuuki.jpg",
+      "sound": null,
+      "speechText": "せんぷうき"
     },
     {
       "id": "terebi",
