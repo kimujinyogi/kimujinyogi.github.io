@@ -12,7 +12,7 @@
       "label": "みず",
       "category": "drink",
       "tags": ["のみもの", "つめたい"],
-      "image": null,
+      "image": "images/mizu.jpg",
       "sound": null,
       "speechText": "みず"
     },
@@ -30,7 +30,7 @@
       "label": "ジュース",
       "category": "drink",
       "tags": ["のみもの", "あまい"],
-      "image": null,
+      "image": "images/juice.jpg",
       "sound": null,
       "speechText": "ジュース"
     },
@@ -39,7 +39,7 @@
       "label": "ぎゅうにゅう",
       "category": "drink",
       "tags": ["のみもの", "しろい"],
-      "image": null,
+      "image": "images/gyunyu.jpg",
       "sound": null,
       "speechText": "ぎゅうにゅう"
     },
