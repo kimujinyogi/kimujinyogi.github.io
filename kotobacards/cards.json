@@ -89,6 +89,24 @@
       "speechText": "バナナ"
     },
     {
+      "id": "fries",
+      "label": "ポテト",
+      "category": "food",
+      "tags": ["たべもの", "あまい"],
+      "image": "images/fries.jpg",
+      "sound": null,
+      "speechText": "ポテトフライ"
+    },
+    {
+      "id": "dounut",
+      "label": "ドーナッツ",
+      "category": "food",
+      "tags": ["たべもの", "あまい"],
+      "image": "images/dounut.jpg",
+      "sound": null,
+      "speechText": "ドーナッツ"
+    },
+    {
       "id": "naget",
       "label": "ナゲット",
       "category": "food",
@@ -192,9 +210,18 @@
       "label": "トイレ",
       "category": "place",
       "tags": ["ばしょ", "おてあらい"],
-      "image": null,
+      "image": "images/toilet.jpg",
       "sound": null,
       "speechText": "トイレ"
+    },
+    {
+      "id": "omutsu",
+      "label": "おむつ",
+      "category": "place",
+      "tags": ["ばしょ", "おてあらい", "かえて"],
+      "image": "images/omutsu.jpg",
+      "sound": null,
+      "speechText": "おむつかえて"
     },
     {
       "id": "kuruma",
@@ -240,6 +267,15 @@
       "image": null,
       "sound": null,
       "speechText": "おなかすいた"
+    },
+    {
+      "id": "nenne",
+      "label": "ねんね",
+      "category": "feeling",
+      "tags": ["きもち", "ねたい", "ねむい"],
+      "image": "images/sleep.jpg",
+      "sound": null,
+      "speechText": "ねんね"
     },
     {
       "id": "nemui",
