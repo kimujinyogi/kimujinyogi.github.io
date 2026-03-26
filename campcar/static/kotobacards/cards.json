@@ -1,17 +1,40 @@
 {
   "categories": [
-    { "id": "drink",   "label": "のみもの", "color": "#4FC3F7" },
-    { "id": "food",    "label": "たべもの", "color": "#81C784" },
-    { "id": "play",    "label": "あそび",   "color": "#FFB74D" },
-    { "id": "place",   "label": "ばしょ",   "color": "#CE93D8" },
-    { "id": "feeling", "label": "きもち",   "color": "#F48FB1" }
+    {
+      "id": "drink",
+      "label": "のみもの",
+      "color": "#4FC3F7"
+    },
+    {
+      "id": "food",
+      "label": "たべもの",
+      "color": "#81C784"
+    },
+    {
+      "id": "play",
+      "label": "あそび",
+      "color": "#FFB74D"
+    },
+    {
+      "id": "place",
+      "label": "ばしょ",
+      "color": "#CE93D8"
+    },
+    {
+      "id": "feeling",
+      "label": "きもち",
+      "color": "#F48FB1"
+    }
   ],
   "cards": [
     {
       "id": "mizu",
       "label": "みず",
       "category": "drink",
-      "tags": ["のみもの", "つめたい"],
+      "tags": [
+        "のみもの",
+        "つめたい"
+      ],
       "image": "images/mizu.jpg",
       "sound": null,
       "speechText": "みず"
@@ -20,7 +43,11 @@
       "id": "mugicha",
       "label": "むぎちゃ",
       "category": "drink",
-      "tags": ["のみもの", "つめたい", "おちゃ"],
+      "tags": [
+        "のみもの",
+        "つめたい",
+        "おちゃ"
+      ],
       "image": null,
       "sound": null,
       "speechText": "むぎちゃ"
@@ -29,7 +56,10 @@
       "id": "juice",
       "label": "ジュース",
       "category": "drink",
-      "tags": ["のみもの", "あまい"],
+      "tags": [
+        "のみもの",
+        "あまい"
+      ],
       "image": "images/juice.jpg",
       "sound": null,
       "speechText": "ジュース"
@@ -38,7 +68,10 @@
       "id": "gyunyu",
       "label": "ぎゅうにゅう",
       "category": "drink",
-      "tags": ["のみもの", "しろい"],
+      "tags": [
+        "のみもの",
+        "しろい"
+      ],
       "image": "images/gyunyu.jpg",
       "sound": null,
       "speechText": "ぎゅうにゅう"
@@ -47,7 +80,10 @@
       "id": "gohan",
       "label": "ごはん",
       "category": "food",
-      "tags": ["たべもの", "しろい"],
+      "tags": [
+        "たべもの",
+        "しろい"
+      ],
       "image": "images/gohan.jpg",
       "sound": null,
       "speechText": "ごはん"
@@ -56,7 +92,10 @@
       "id": "pan",
       "label": "パン",
       "category": "food",
-      "tags": ["たべもの", "あさごはん"],
+      "tags": [
+        "たべもの",
+        "あさごはん"
+      ],
       "image": "images/pan.jpg",
       "sound": null,
       "speechText": "パン"
@@ -65,7 +104,10 @@
       "id": "udon",
       "label": "うどん",
       "category": "food",
-      "tags": ["たべもの", "めん"],
+      "tags": [
+        "たべもの",
+        "めん"
+      ],
       "image": null,
       "sound": null,
       "speechText": "うどん"
@@ -74,7 +116,11 @@
       "id": "ringo",
       "label": "りんご",
       "category": "food",
-      "tags": ["たべもの", "くだもの", "あかい"],
+      "tags": [
+        "たべもの",
+        "くだもの",
+        "あかい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "りんご"
@@ -83,7 +129,11 @@
       "id": "banana",
       "label": "バナナ",
       "category": "food",
-      "tags": ["たべもの", "くだもの", "きいろい"],
+      "tags": [
+        "たべもの",
+        "くだもの",
+        "きいろい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "バナナ"
@@ -92,7 +142,10 @@
       "id": "fries",
       "label": "ポテト",
       "category": "food",
-      "tags": ["たべもの", "あまい"],
+      "tags": [
+        "たべもの",
+        "あまい"
+      ],
       "image": "images/fries.jpg",
       "sound": null,
       "speechText": "ポテトフライ"
@@ -101,7 +154,10 @@
       "id": "dounut",
       "label": "ドーナッツ",
       "category": "food",
-      "tags": ["たべもの", "あまい"],
+      "tags": [
+        "たべもの",
+        "あまい"
+      ],
       "image": "images/dounut.jpg",
       "sound": null,
       "speechText": "ドーナッツ"
@@ -110,7 +166,10 @@
       "id": "naget",
       "label": "ナゲット",
       "category": "food",
-      "tags": ["たべもの", "とりにく"],
+      "tags": [
+        "たべもの",
+        "とりにく"
+      ],
       "image": "images/naget.jpg",
       "sound": null,
       "speechText": "ナゲット"
@@ -119,16 +178,211 @@
       "id": "ice",
       "label": "アイス",
       "category": "food",
-      "tags": ["たべもの", "つめたい", "あまい"],
+      "tags": [
+        "たべもの",
+        "つめたい",
+        "あまい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "アイスクリーム"
     },
     {
+      "id": "pringles",
+      "label": "プリングルス",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし"
+      ],
+      "image": "images/pringles.jpg",
+      "sound": null,
+      "speechText": "プリングルス"
+    },
+    {
+      "id": "oreo",
+      "label": "オレオ",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし",
+        "あまい"
+      ],
+      "image": "images/oreo.jpg",
+      "sound": null,
+      "speechText": "オレオ"
+    },
+    {
+      "id": "hoshisenbei",
+      "label": "ほしのせんべい",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし",
+        "せんべい"
+      ],
+      "image": "images/hoshisenbei.jpg",
+      "sound": null,
+      "speechText": "ほしのせんべい"
+    },
+    {
+      "id": "ebisenbei",
+      "label": "えびせん",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし",
+        "えび"
+      ],
+      "image": null,
+      "sound": null,
+      "speechText": "カッパえびせん"
+    },
+    {
+      "id": "ramen",
+      "label": "ラーメン",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "めん",
+        "しる"
+      ],
+      "image": "images/ramen.jpg",
+      "sound": null,
+      "speechText": "ラーメン"
+    },
+    {
+      "id": "cupramen",
+      "label": "カップラーメン",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "めん",
+        "カップ"
+      ],
+      "image": "images/cupramen.jpg",
+      "sound": null,
+      "speechText": "カップラーメン"
+    },
+    {
+      "id": "appapan",
+      "label": "あっぱパン",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "パン",
+        "じさく"
+      ],
+      "image": null,
+      "sound": null,
+      "speechText": "あっぱパン"
+    },
+    {
+      "id": "pizza",
+      "label": "ピザ",
+      "category": "food",
+      "tags": [
+        "たべもの"
+      ],
+      "image": "images/pizza.jpg",
+      "sound": null,
+      "speechText": "ピザ"
+    },
+    {
+      "id": "hamburg",
+      "label": "ハンバーグ",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "にく"
+      ],
+      "image": "images/hamburg.jpg",
+      "sound": null,
+      "speechText": "ハンバーグ"
+    },
+    {
+      "id": "yakiniku",
+      "label": "やきにく",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "にく"
+      ],
+      "image": null,
+      "sound": null,
+      "speechText": "やきにく"
+    },
+    {
+      "id": "sarada",
+      "label": "サラダ",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "やさい"
+      ],
+      "image": null,
+      "sound": null,
+      "speechText": "サラダ"
+    },
+    {
+      "id": "broccoli",
+      "label": "ブロッコリー",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "やさい",
+        "みどり"
+      ],
+      "image": "images/broccoli.jpg",
+      "sound": null,
+      "speechText": "ブロッコリー"
+    },
+    {
+      "id": "winna",
+      "label": "ウィンナー",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "にく"
+      ],
+      "image": "images/winna.jpg",
+      "sound": null,
+      "speechText": "ウィンナー"
+    },
+    {
+      "id": "pokubittsu",
+      "label": "ポークピッツ",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし"
+      ],
+      "image": "images/pokubittsu.jpg",
+      "sound": null,
+      "speechText": "ポークピッツ"
+    },
+    {
+      "id": "chupachups",
+      "label": "チュパチュップス",
+      "category": "food",
+      "tags": [
+        "たべもの",
+        "おかし",
+        "あめ",
+        "あまい"
+      ],
+      "image": "images/chupachups.jpg",
+      "sound": null,
+      "speechText": "チュパチュップス"
+    },
+    {
       "id": "buranko",
       "label": "ブランコ",
       "category": "play",
-      "tags": ["あそび", "こうえん"],
+      "tags": [
+        "あそび",
+        "こうえん"
+      ],
       "image": null,
       "sound": null,
       "speechText": "ブランコ"
@@ -137,7 +391,10 @@
       "id": "suberidai",
       "label": "すべりだい",
       "category": "play",
-      "tags": ["あそび", "こうえん"],
+      "tags": [
+        "あそび",
+        "こうえん"
+      ],
       "image": null,
       "sound": null,
       "speechText": "すべりだい"
@@ -146,7 +403,10 @@
       "id": "ball",
       "label": "ボール",
       "category": "play",
-      "tags": ["あそび", "そとあそび"],
+      "tags": [
+        "あそび",
+        "そとあそび"
+      ],
       "image": null,
       "sound": null,
       "speechText": "ボール"
@@ -155,7 +415,10 @@
       "id": "ehon",
       "label": "えほん",
       "category": "play",
-      "tags": ["あそび", "うちあそび"],
+      "tags": [
+        "あそび",
+        "うちあそび"
+      ],
       "image": null,
       "sound": null,
       "speechText": "えほん"
@@ -164,7 +427,11 @@
       "id": "senpuuki",
       "label": "せんぷうき",
       "category": "play",
-      "tags": ["あそび", "あつい", "かぜ"],
+      "tags": [
+        "あそび",
+        "あつい",
+        "かぜ"
+      ],
       "image": "images/senpuuki.jpg",
       "sound": null,
       "speechText": "せんぷうき"
@@ -173,7 +440,10 @@
       "id": "terebi",
       "label": "テレビ",
       "category": "play",
-      "tags": ["あそび", "うちあそび"],
+      "tags": [
+        "あそび",
+        "うちあそび"
+      ],
       "image": null,
       "sound": null,
       "speechText": "テレビ"
@@ -182,7 +452,10 @@
       "id": "ouchi",
       "label": "おうち",
       "category": "place",
-      "tags": ["ばしょ", "いえ"],
+      "tags": [
+        "ばしょ",
+        "いえ"
+      ],
       "image": null,
       "sound": null,
       "speechText": "おうち"
@@ -191,7 +464,10 @@
       "id": "kouen",
       "label": "こうえん",
       "category": "place",
-      "tags": ["ばしょ", "そと"],
+      "tags": [
+        "ばしょ",
+        "そと"
+      ],
       "image": null,
       "sound": null,
       "speechText": "こうえん"
@@ -200,7 +476,10 @@
       "id": "super",
       "label": "スーパー",
       "category": "place",
-      "tags": ["ばしょ", "かいもの"],
+      "tags": [
+        "ばしょ",
+        "かいもの"
+      ],
       "image": null,
       "sound": null,
       "speechText": "スーパー"
@@ -209,7 +488,10 @@
       "id": "toire",
       "label": "トイレ",
       "category": "place",
-      "tags": ["ばしょ", "おてあらい"],
+      "tags": [
+        "ばしょ",
+        "おてあらい"
+      ],
       "image": "images/toilet.jpg",
       "sound": null,
       "speechText": "トイレ"
@@ -218,7 +500,11 @@
       "id": "omutsu",
       "label": "おむつ",
       "category": "place",
-      "tags": ["ばしょ", "おてあらい", "かえて"],
+      "tags": [
+        "ばしょ",
+        "おてあらい",
+        "かえて"
+      ],
       "image": "images/omutsu.jpg",
       "sound": null,
       "speechText": "おむつかえて"
@@ -227,7 +513,11 @@
       "id": "kuruma",
       "label": "くるま",
       "category": "place",
-      "tags": ["ばしょ", "のりもの", "おでかけ"],
+      "tags": [
+        "ばしょ",
+        "のりもの",
+        "おでかけ"
+      ],
       "image": null,
       "sound": null,
       "speechText": "くるま"
@@ -236,7 +526,10 @@
       "id": "ureshii",
       "label": "うれしい",
       "category": "feeling",
-      "tags": ["きもち", "たのしい"],
+      "tags": [
+        "きもち",
+        "たのしい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "うれしい"
@@ -245,7 +538,9 @@
       "id": "kanashii",
       "label": "かなしい",
       "category": "feeling",
-      "tags": ["きもち"],
+      "tags": [
+        "きもち"
+      ],
       "image": null,
       "sound": null,
       "speechText": "かなしい"
@@ -254,7 +549,10 @@
       "id": "itai",
       "label": "いたい",
       "category": "feeling",
-      "tags": ["きもち", "からだ"],
+      "tags": [
+        "きもち",
+        "からだ"
+      ],
       "image": null,
       "sound": null,
       "speechText": "いたい"
@@ -263,7 +561,11 @@
       "id": "onakasukita",
       "label": "おなかすいた",
       "category": "feeling",
-      "tags": ["きもち", "おなか", "たべたい"],
+      "tags": [
+        "きもち",
+        "おなか",
+        "たべたい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "おなかすいた"
@@ -272,7 +574,11 @@
       "id": "nenne",
       "label": "ねんね",
       "category": "feeling",
-      "tags": ["きもち", "ねたい", "ねむい"],
+      "tags": [
+        "きもち",
+        "ねたい",
+        "ねむい"
+      ],
       "image": "images/sleep.jpg",
       "sound": null,
       "speechText": "ねんね"
@@ -281,7 +587,10 @@
       "id": "nemui",
       "label": "ねむい",
       "category": "feeling",
-      "tags": ["きもち", "ねたい"],
+      "tags": [
+        "きもち",
+        "ねたい"
+      ],
       "image": null,
       "sound": null,
       "speechText": "ねむい"
