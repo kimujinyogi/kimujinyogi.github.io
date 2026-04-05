@@ -33,7 +33,12 @@ IOS_SOURCES = [
     {"url": "https://www.hackingwithswift.com/articles/rss",  "name": "HackingWithSwift"},
     {"url": "https://www.swiftbysundell.com/feed.rss",        "name": "SwiftBySundell"},
     {"url": "https://9to5mac.com/feed/",                      "name": "9to5Mac"},
-    {"url": "https://feeds.macrumors.com/MacRumors-All",      "name": "MacRumors"},
+]
+
+# Vision Pro専用ソース（一般Appleニュースも含むため、必ずキーワードフィルタをかけて使う）
+VISIONPRO_SOURCES = [
+    {"url": "https://feeds.macrumors.com/MacRumors-All", "name": "MacRumors"},
+    {"url": "https://9to5mac.com/feed/",                 "name": "9to5Mac"},
 ]
 
 IOS_KEYWORDS = ["iOS", "Swift", "SwiftUI", "Xcode", "App Store", "iPhone", "UIKit"]
@@ -111,6 +116,29 @@ def collect_ios_entries(hours: int = 24) -> list[dict]:
             print(f"[WARNING] {source['name']} の取得に失敗: {e}")
 
     return all_entries
+
+
+def collect_visionpro_entries(hours: int = 48) -> list[dict]:
+    """Vision Pro専用RSSソースからVision Proキーワードでフィルタして収集する。
+
+    デフォルト48時間で取得することで、Vision Pro記事の少ない日でも取りこぼしを減らす。
+    """
+    since = datetime.now(tz=timezone.utc) - timedelta(hours=hours)
+    seen_urls: set[str] = set()
+    all_entries: list[dict] = []
+
+    for source in VISIONPRO_SOURCES:
+        try:
+            entries = fetch_entries(source, since)
+            for entry in entries:
+                url = entry["url"]
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    all_entries.append(entry)
+        except Exception as e:
+            print(f"[WARNING] {source['name']} の取得に失敗: {e}")
+
+    return filter_by_keywords(all_entries, VISIONPRO_KEYWORDS)
 
 
 def filter_by_keywords(entries: list[dict], keywords: list[str]) -> list[dict]:
@@ -231,12 +259,14 @@ def write_daily(now: datetime) -> None:
     # 2. iOSエントリ = iOS専用RSS ＋ 全ソースのキーワードフィルタ
     ios_from_sources = collect_ios_entries(hours=24)
     ios_from_keywords = filter_by_keywords(collect_all_entries(hours=24), IOS_KEYWORDS)
-    all_ios = deduplicate(ios_from_sources + ios_from_keywords)
-    ios_entries = all_ios[:15]
+    ios_entries = deduplicate(ios_from_sources + ios_from_keywords)[:15]
 
-    # 3. Vision Proエントリ = 全ソース（general + ios全件）のキーワードフィルタ
-    # ios_entriesのスライス前（all_ios）を使うことで、15件の制限に引っかかったVision Pro記事を拾う
-    vp_entries = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)[:10]
+    # 3. Vision Proエントリ = Vision Pro専用ソース（48h）＋ 一般ソースのキーワードフィルタ
+    # VISIONPRO_SOURCESからVision Proキーワードでフィルタ済みの記事を取得し、
+    # さらに一般ソースにもVision Pro記事があれば追加する
+    vp_from_sources = collect_visionpro_entries(hours=48)
+    vp_from_general = filter_by_keywords(general, VISIONPRO_KEYWORDS)
+    vp_entries = deduplicate(vp_from_sources + vp_from_general)[:10]
 
     title = f"{date_label} ITニュースランキング"
     content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
