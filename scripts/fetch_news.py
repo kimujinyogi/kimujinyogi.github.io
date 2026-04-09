@@ -41,6 +41,8 @@ VISIONPRO_KEYWORDS = ["Vision Pro", "visionOS", "spatial computing", "RealityKit
 
 CONTENT_NEWS_DIR = Path(__file__).parent.parent / "campcar" / "content" / "news"
 TOP_N = 20
+IOS_TOP_N = 10
+VP_TOP_N = 5
 
 
 def fetch_entries(source: dict, since: datetime) -> list[dict]:
@@ -232,11 +234,11 @@ def write_daily(now: datetime) -> None:
     ios_from_sources = collect_ios_entries(hours=24)
     ios_from_keywords = filter_by_keywords(collect_all_entries(hours=24), IOS_KEYWORDS)
     all_ios = deduplicate(ios_from_sources + ios_from_keywords)
-    ios_entries = all_ios[:15]
+    ios_entries = all_ios[:IOS_TOP_N]
 
     # 3. Vision Proエントリ = 全ソース（general + ios全件）のキーワードフィルタ
-    # ios_entriesのスライス前（all_ios）を使うことで、15件の制限に引っかかったVision Pro記事を拾う
-    vp_entries = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)[:10]
+    # ios_entriesのスライス前（all_ios）を使うことで、IOS_TOP_N件の制限に引っかかったVision Pro記事を拾う
+    vp_entries = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)[:VP_TOP_N]
 
     title = f"{date_label} ITニュースランキング"
     content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
