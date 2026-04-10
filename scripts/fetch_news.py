@@ -39,6 +39,12 @@ IOS_SOURCES = [
 IOS_KEYWORDS = ["iOS", "Swift", "SwiftUI", "Xcode", "App Store", "iPhone", "UIKit"]
 VISIONPRO_KEYWORDS = ["Vision Pro", "visionOS", "spatial computing", "RealityKit", "ARKit", "ビジョンプロ"]
 
+VISIONPRO_SOURCES = [
+    {"url": "https://gigazine.net/news/rss_2.0/",          "name": "Gigazine"},
+    {"url": "https://biggo.jp/news/feed/",                 "name": "BigGo"},
+    {"url": "https://news.nicovideo.jp/rss",               "name": "ニコニコニュース"},
+]
+
 CONTENT_NEWS_DIR = Path(__file__).parent.parent / "campcar" / "content" / "news"
 TOP_N = 20
 IOS_TOP_N = 10
@@ -113,6 +119,26 @@ def collect_ios_entries(hours: int = 24) -> list[dict]:
             print(f"[WARNING] {source['name']} の取得に失敗: {e}")
 
     return all_entries
+
+
+def collect_visionpro_entries(hours: int = 24) -> list[dict]:
+    """Vision Pro専用RSSソースからエントリを収集し、キーワードフィルタして返す。"""
+    since = datetime.now(tz=timezone.utc) - timedelta(hours=hours)
+    seen_urls: set[str] = set()
+    all_entries: list[dict] = []
+
+    for source in VISIONPRO_SOURCES:
+        try:
+            entries = fetch_entries(source, since)
+            for entry in entries:
+                url = entry["url"]
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    all_entries.append(entry)
+        except Exception as e:
+            print(f"[WARNING] {source['name']} の取得に失敗: {e}")
+
+    return filter_by_keywords(all_entries, VISIONPRO_KEYWORDS)
 
 
 def filter_by_keywords(entries: list[dict], keywords: list[str]) -> list[dict]:
@@ -236,9 +262,10 @@ def write_daily(now: datetime) -> None:
     all_ios = deduplicate(ios_from_sources + ios_from_keywords)
     ios_entries = all_ios[:IOS_TOP_N]
 
-    # 3. Vision Proエントリ = 全ソース（general + ios全件）のキーワードフィルタ
-    # ios_entriesのスライス前（all_ios）を使うことで、IOS_TOP_N件の制限に引っかかったVision Pro記事を拾う
-    vp_entries = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)[:VP_TOP_N]
+    # 3. Vision Proエントリ = 専用ソース(Gigazine/BigGo/ニコニコ) + general + ios全件のキーワードフィルタ
+    vp_from_dedicated = collect_visionpro_entries(hours=24)
+    vp_from_keywords = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)
+    vp_entries = deduplicate(vp_from_dedicated + vp_from_keywords)[:VP_TOP_N]
 
     title = f"{date_label} ITニュースランキング"
     content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
