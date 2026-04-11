@@ -49,6 +49,7 @@ CONTENT_NEWS_DIR = Path(__file__).parent.parent / "campcar" / "content" / "news"
 TOP_N = 20
 IOS_TOP_N = 10
 VP_TOP_N = 5
+VP_HOURS = 72  # Vision Proニュースは毎日出るとは限らないため72時間分さかのぼる
 
 
 def fetch_entries(source: dict, since: datetime) -> list[dict]:
@@ -262,10 +263,12 @@ def write_daily(now: datetime) -> None:
     all_ios = deduplicate(ios_from_sources + ios_from_keywords)
     ios_entries = all_ios[:IOS_TOP_N]
 
-    # 3. Vision Proエントリ = 専用ソース(Gigazine/BigGo/ニコニコ) + general + ios全件のキーワードフィルタ
-    vp_from_dedicated = collect_visionpro_entries(hours=24)
-    vp_from_keywords = filter_by_keywords(general + all_ios, VISIONPRO_KEYWORDS)
-    vp_entries = deduplicate(vp_from_dedicated + vp_from_keywords)[:VP_TOP_N]
+    # 3. Vision Proエントリ = 専用ソース(Gigazine/BigGo/ニコニコ) + iOSソース72h + general のキーワードフィルタ
+    # VP_HOURS分さかのぼることで、毎日記事が出ない日でも直近の記事を拾えるようにする
+    vp_from_dedicated = collect_visionpro_entries(hours=VP_HOURS)
+    vp_from_ios = filter_by_keywords(collect_ios_entries(hours=VP_HOURS), VISIONPRO_KEYWORDS)
+    vp_from_general = filter_by_keywords(general, VISIONPRO_KEYWORDS)
+    vp_entries = deduplicate(vp_from_dedicated + vp_from_ios + vp_from_general)[:VP_TOP_N]
 
     title = f"{date_label} ITニュースランキング"
     content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
@@ -274,7 +277,7 @@ def write_daily(now: datetime) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "index.md"
     out_path.write_text(content, encoding="utf-8")
-    print(f"[INFO] 書き込み完了: {out_path} (IT全般:{len(general)}件, iOS:{len(ios_entries)}件, VisionPro:{len(vp_entries)}件)")
+    print(f"[INFO] 書き込み完了: {out_path} (IT全般:{len(general)}件, iOS:{len(ios_entries)}件, VisionPro:{len(vp_entries)}件/{VP_HOURS}h)")
 
 
 def write_weekly(now: datetime) -> None:
