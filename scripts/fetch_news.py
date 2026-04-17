@@ -26,6 +26,10 @@ RSS_SOURCES = [
         "url": "https://qiita.com/popular-items/feed",
         "name": "Qiita",
     },
+    {
+        "url": "https://news.hada.io/rss",
+        "name": "GeekNews",
+    },
 ]
 
 IOS_SOURCES = [
