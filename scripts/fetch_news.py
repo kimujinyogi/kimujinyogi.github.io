@@ -26,6 +26,9 @@ RSS_SOURCES = [
         "url": "https://qiita.com/popular-items/feed",
         "name": "Qiita",
     },
+]
+
+GEEKNEWS_SOURCES = [
     {
         "url": "https://news.hada.io/rss",
         "name": "GeekNews",
@@ -53,6 +56,7 @@ CONTENT_NEWS_DIR = Path(__file__).parent.parent / "campcar" / "content" / "news"
 TOP_N = 20
 IOS_TOP_N = 10
 VP_TOP_N = 5
+GEEKNEWS_TOP_N = 5
 VP_HOURS = 72  # Vision Proニュースは毎日出るとは限らないため72時間分さかのぼる
 
 
@@ -113,6 +117,26 @@ def collect_ios_entries(hours: int = 24) -> list[dict]:
     all_entries: list[dict] = []
 
     for source in IOS_SOURCES:
+        try:
+            entries = fetch_entries(source, since)
+            for entry in entries:
+                url = entry["url"]
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    all_entries.append(entry)
+        except Exception as e:
+            print(f"[WARNING] {source['name']} の取得に失敗: {e}")
+
+    return all_entries
+
+
+def collect_geeknews_entries(hours: int = 24) -> list[dict]:
+    """GeekNews RSSからエントリを収集し、重複排除して返す。"""
+    since = datetime.now(tz=timezone.utc) - timedelta(hours=hours)
+    seen_urls: set[str] = set()
+    all_entries: list[dict] = []
+
+    for source in GEEKNEWS_SOURCES:
         try:
             entries = fetch_entries(source, since)
             for entry in entries:
@@ -191,12 +215,13 @@ def build_ranking_md(entries: list[dict], title: str, date_str: str) -> str:
 
 def build_daily_md(
     general: list[dict],
+    geeknews_entries: list[dict],
     ios_entries: list[dict],
     vp_entries: list[dict],
     title: str,
     date_str: str,
 ) -> str:
-    """3セクション（IT全般・iOS・Vision Pro）を含む日次 Markdown を組み立てる。"""
+    """4セクション（IT全般・GeekNews・iOS・Vision Pro）を含む日次 Markdown を組み立てる。"""
     lines = [
         "---",
         f'title: "{title}"',
@@ -211,6 +236,12 @@ def build_daily_md(
     for i, entry in enumerate(general, 1):
         safe_title = entry["title"].replace('"', '\u201d')
         lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
+
+    if geeknews_entries:
+        lines += ["", f"## GeekNews TOP{len(geeknews_entries)}", ""]
+        for i, entry in enumerate(geeknews_entries, 1):
+            safe_title = entry["title"].replace('"', '\u201d')
+            lines.append(f'{i}. [{safe_title}]({entry["url"]}) - {entry["source"]}')
 
     if ios_entries:
         lines += ["", "## iOSニュース", ""]
@@ -267,7 +298,10 @@ def write_daily(now: datetime) -> None:
     all_ios = deduplicate(ios_from_sources + ios_from_keywords)
     ios_entries = all_ios[:IOS_TOP_N]
 
-    # 3. Vision Proエントリ = 専用ソース(Gigazine/BigGo/ニコニコ) + iOSソース72h + general のキーワードフィルタ
+    # 3. GeekNewsエントリ
+    geeknews_entries = collect_geeknews_entries(hours=24)[:GEEKNEWS_TOP_N]
+
+    # 4. Vision Proエントリ = 専用ソース(Gigazine/BigGo/ニコニコ) + iOSソース72h + general のキーワードフィルタ
     # VP_HOURS分さかのぼることで、毎日記事が出ない日でも直近の記事を拾えるようにする
     vp_from_dedicated = collect_visionpro_entries(hours=VP_HOURS)
     vp_from_ios = filter_by_keywords(collect_ios_entries(hours=VP_HOURS), VISIONPRO_KEYWORDS)
@@ -275,13 +309,13 @@ def write_daily(now: datetime) -> None:
     vp_entries = deduplicate(vp_from_dedicated + vp_from_ios + vp_from_general)[:VP_TOP_N]
 
     title = f"{date_label} ITニュースランキング"
-    content = build_daily_md(general, ios_entries, vp_entries, title, date_iso)
+    content = build_daily_md(general, geeknews_entries, ios_entries, vp_entries, title, date_iso)
 
     out_dir = CONTENT_NEWS_DIR / date_label
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "index.md"
     out_path.write_text(content, encoding="utf-8")
-    print(f"[INFO] 書き込み完了: {out_path} (IT全般:{len(general)}件, iOS:{len(ios_entries)}件, VisionPro:{len(vp_entries)}件/{VP_HOURS}h)")
+    print(f"[INFO] 書き込み完了: {out_path} (IT全般:{len(general)}件, GeekNews:{len(geeknews_entries)}件, iOS:{len(ios_entries)}件, VisionPro:{len(vp_entries)}件/{VP_HOURS}h)")
 
 
 def write_weekly(now: datetime) -> None:
