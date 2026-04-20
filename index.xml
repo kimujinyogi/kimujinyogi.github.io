@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 20 Apr 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-04-21 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-04-21/</link>
+        <pubDate>Tue, 21 Apr 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 21 Apr 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-04-21/</guid>
+        <description>今日のITニュース TOP20 おじさん「AIはこう言ってるよ(長文ﾍﾟﾀｯ)」👈️社会問題化していると話題に - はてブ AIの台頭がインターネットのアーカ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-04-20 ITニュースランキング</title>
@@ -2741,24 +2759,6 @@
         <atom:modified>Mon, 07 Jan 2019 17:35:38 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/privacy/</guid>
         <description>個人情報の利用目的 当ブログでは、メールでのお問い合わせ、メールマガジンへの登録などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報</description>
-        
-        <dc:creator>jinyogi</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>このブログについて</title>
-        <link>https://kimujinyogi.github.io/about/</link>
-        <pubDate>Fri, 04 Jan 2019 10:28:51 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 04 Jan 2019 10:28:51 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/about/</guid>
-        <description>じにょぎについて 名前 金珍奕 国籍 韓国 居住地 日本、埼玉県 家族構成 妻・娘・息子2人の5人家族 職業 フリーランス、アプリエンジニア やってきたこと アプリ</description>
         
         <dc:creator>jinyogi</dc:creator>
         
