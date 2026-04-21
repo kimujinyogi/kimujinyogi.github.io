@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 21 Apr 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-04-22 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-04-22/</link>
+        <pubDate>Wed, 22 Apr 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 22 Apr 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-04-22/</guid>
+        <description>今日のITニュース TOP20 「起動直後に広告を出すなよ」──FamiPay仕様に不満 「ユニクロ」に学べの声も - はてブ ローカルでAIを動かすための基礎</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-04-21 ITニュースランキング</title>
@@ -2748,24 +2766,6 @@
               <category>キャンピングカーの話</category>
             
           
-        
-      </item>
-      
-      <item>
-        <title>プライバシーポリシー</title>
-        <link>https://kimujinyogi.github.io/privacy/</link>
-        <pubDate>Mon, 07 Jan 2019 17:35:38 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 07 Jan 2019 17:35:38 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/privacy/</guid>
-        <description>個人情報の利用目的 当ブログでは、メールでのお問い合わせ、メールマガジンへの登録などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報</description>
-        
-        <dc:creator>jinyogi</dc:creator>
-        
-        
-        
-        
-        
         
       </item>
       
