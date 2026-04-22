@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Wed, 22 Apr 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-04-23 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-04-23/</link>
+        <pubDate>Thu, 23 Apr 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Thu, 23 Apr 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-04-23/</guid>
+        <description>今日のITニュース TOP20 すごすぎて笑う、なにこれ OpenAI、漫画や広告に強い画像生成AI「ChatGPT Images 2.0」正式発表 - はてブ その生産性向</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-04-22 ITニュースランキング</title>
@@ -2705,42 +2723,6 @@
         <atom:modified>Fri, 03 May 2019 22:19:36 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/neuncatalog/</guid>
         <description>WHON NEUN (ヴォーン ノイン) のカタログが家に届いた ついにカタログが！ キャンピングカーを購入したもののカタログも、公式ページにも車の情報がなかったの</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>ヴォーンDCノイン</category>
-            
-          
-        
-        
-          
-            
-              <category>キャンピングカー</category>
-            
-          
-        
-        
-          
-            
-              <category>キャンピングカーの話</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>キャンピングカーを購入！！(ヴォーンDC NEUN)</title>
-        <link>https://kimujinyogi.github.io/posts/firstpost/</link>
-        <pubDate>Sun, 24 Mar 2019 23:34:50 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sun, 24 Mar 2019 23:34:50 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/firstpost/</guid>
-        <description>ついにキャンピングカー ついに・・・ 毎年キャンピングカーショーに通い続けて３年・・・ ついにキャンピングカーを購入しました！！！！ 購入したのは２</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
