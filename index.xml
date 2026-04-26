@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 26 Apr 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-04-27 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-04-27/</link>
+        <pubDate>Mon, 27 Apr 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 27 Apr 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-04-27/</guid>
+        <description>今日のITニュース TOP18 Claude CodeのVSCode拡張が使いやすいよ - Qiita - はてブ 200万行のテーブルにDDLを打つ前に知りたかったこと - はてブ Pd</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-04-26 ITニュースランキング</title>
@@ -2636,42 +2654,6 @@
           
         
         
-        
-      </item>
-      
-      <item>
-        <title>プールでGoProを水没させてしまった話</title>
-        <link>https://kimujinyogi.github.io/posts/gopro_submerged/</link>
-        <pubDate>Tue, 03 Sep 2019 07:30:43 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Tue, 03 Sep 2019 07:30:43 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/gopro_submerged/</guid>
-        <description>GoPro hero 7 購入して３カ月して水没させる やってしまいました・・・ GoProにはuseとhdmiの指口があり、フタを開けることができます ただ、フタを</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>gopro</category>
-            
-          
-        
-        
-          
-            
-              <category>家電</category>
-            
-          
-        
-        
-          
-            
-              <category>家電</category>
-            
-          
         
       </item>
       
