@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 03 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-04 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-04/</link>
+        <pubDate>Mon, 04 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 04 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-04/</guid>
+        <description>今日のITニュース TOP20 AIエージェントを会社で使いたい！→「え、セキュリティどうするの？」 企業導入への技術的アプローチ - Qiita - はてブ 【緊急】Cu</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-03 ITニュースランキング</title>
@@ -2518,36 +2536,6 @@
               <category>健康</category>
             
           
-        
-      </item>
-      
-      <item>
-        <title>プログラミングをする時に忘れてはいけないこと</title>
-        <link>https://kimujinyogi.github.io/posts/program_20200525/</link>
-        <pubDate>Mon, 25 May 2020 14:16:04 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 25 May 2020 14:16:04 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/program_20200525/</guid>
-        <description>仕事をしていて、プログラミングをする上で一番やってはいけないと思うこと 色々注意すべき事はあると思います プログラミングの書き方もそうですし、結</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>programing</category>
-            
-          
-        
-        
-          
-            
-              <category>programing</category>
-            
-          
-        
         
       </item>
       
