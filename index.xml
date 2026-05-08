@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Fri, 08 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,42 @@
         
       
 
+      
+      <item>
+        <title>2026-05-09 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-09/</link>
+        <pubDate>Sat, 09 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sat, 09 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-09/</guid>
+        <description>今日のITニュース TOP20 ドコモ前田社長「ahamoだけ遅いということはない」、SNSの噂を否定 - はてブ はてな、約11億円の資金流出で特別調査委員</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>週間ITニュースランキング (2026-05-03 〜 2026-05-09)</title>
+        <link>https://kimujinyogi.github.io/news/weekly-2026-05-03/</link>
+        <pubDate>Sat, 09 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sat, 09 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/weekly-2026-05-03/</guid>
+        <description>今週のITニュース TOP20 ドコモ前田社長「ahamoだけ遅いということはない」、SNSの噂を否定 - はてブ はてな、約11億円の資金流出で特別調査委員</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-08 ITニュースランキング</title>
@@ -2371,74 +2407,6 @@
         <atom:modified>Thu, 10 Jun 2021 17:39:09 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/mc20210610/</guid>
         <description>木材をたくさん増やしたい マイクラの序盤から終盤まで木材ってたくさん使いますよね！ とりあえず建築をしてたのですが、 木材が足りなくなるたびにお出</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>更新頻度を上げるためにCircleCIを導入しました</title>
-        <link>https://kimujinyogi.github.io/posts/st20210609/</link>
-        <pubDate>Wed, 09 Jun 2021 18:29:08 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Wed, 09 Jun 2021 18:29:08 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/st20210609/</guid>
-        <description>お久しぶりです とても久しぶりに更新しようと思います 一応Deployテストはしているものの、 実際に記事を追加して反映されるのを確認したく こうや</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>雑談</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>めっちゃリアル！NAPPリソースを試してみた、ついでに久しぶりに建築</title>
-        <link>https://kimujinyogi.github.io/posts/mc20210115/</link>
-        <pubDate>Fri, 15 Jan 2021 13:08:17 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 15 Jan 2021 13:08:17 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/mc20210115/</guid>
-        <description>半年ぶり ほぼ半年・・・もしかしたらそれ以上時間がたち、 久しぶりすぎて何をしてたのか 何もかも忘れてしまいました(笑) とりあえず畑の麦を回収して</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
