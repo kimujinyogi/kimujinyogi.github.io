@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 11 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-12 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-12/</link>
+        <pubDate>Tue, 12 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 12 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-12/</guid>
+        <description>今日のITニュース TOP20 引っ越してネット回線を引こうとしたら何ヶ月も進捗がなく、業者の回答も微妙なので自分で他所に問い合わせたら怖いことになった</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-11 ITニュースランキング</title>
@@ -2347,42 +2365,6 @@
         <atom:modified>Thu, 17 Jun 2021 00:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/mc20210617/</guid>
         <description>じにょぎです、こんにちは！ iPad Pro 12.9インチでマイクラを遊んでみたので日記のように書いていきます 今回はエンダーでの素材集めの旅が終わったので</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>iPad ProとMagic keyboardでマイクラをやってみた...かった・・！</title>
-        <link>https://kimujinyogi.github.io/posts/mc20210616/</link>
-        <pubDate>Wed, 16 Jun 2021 00:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Wed, 16 Jun 2021 00:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/mc20210616/</guid>
-        <description>どうも、じにょぎです、 こんにちは 本日はただただiPad Pro 12.9インチでマイクラを遊んでみた ということだけです・・・！ 操作について とても滑ら</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
