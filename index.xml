@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sat, 16 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-17 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-17/</link>
+        <pubDate>Sun, 17 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sun, 17 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-17/</guid>
+        <description>今日のITニュース TOP20 Claude Code を社内で使うための「AIエージェントセキュリティ」実践編 - Qiita - はてブ 本物のモネの絵の一部を出して「あの睡蓮をAI生成</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-16 ITニュースランキング</title>
@@ -2239,42 +2257,6 @@
         <atom:modified>Mon, 16 Aug 2021 00:12:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/mc20210816/</guid>
         <description>じにょぎです、こんにちは！ 今回は以前作っていた村人交易場の問題点を修正しようと思います。 村人交易場とは 村人には職業というのがあり各職業によっ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>光るイカなど新しい要素を発見！</title>
-        <link>https://kimujinyogi.github.io/posts/mc20210726/</link>
-        <pubDate>Mon, 26 Jul 2021 00:12:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 26 Jul 2021 00:12:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/mc20210726/</guid>
-        <description>じにょぎです、こんにちは！ 今回は前回に続いてもう一度新しい要素を求めて旅に出かけます と思って旅の支度をしていたらすね・・・ 行商人が尖ったドリ</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
