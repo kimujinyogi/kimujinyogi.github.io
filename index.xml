@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 19 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-20 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-20/</link>
+        <pubDate>Wed, 20 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 20 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-20/</guid>
+        <description>今日のITニュース TOP20 【速報】自民修正案、AI創作の国旗は処罰対象外に - はてブ ゲームエンジンUnityとGodotの両方で「同じゲームを2つ作</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-19 ITニュースランキング</title>
@@ -2208,42 +2226,6 @@
           
             
               <category>雑談</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>マイクラで地下世界を鉱石だけ丸見えにしてみました コマンドの紹介です</title>
-        <link>https://kimujinyogi.github.io/posts/mc20211215/</link>
-        <pubDate>Wed, 15 Dec 2021 00:12:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Wed, 15 Dec 2021 00:12:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/mc20211215/</guid>
-        <description>じにょぎです、こんにちは！ 今回は洞窟アップデートで地下の鉱石を確認できるコマンドを紹介しようと思います 自分の世界をコピーして行ってしまうと、</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
-            
-          
-        
-        
-          
-            
-              <category>マインクラフト</category>
             
           
         
