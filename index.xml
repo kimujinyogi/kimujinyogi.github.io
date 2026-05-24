@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 24 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-25 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-25/</link>
+        <pubDate>Mon, 25 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 25 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-25/</guid>
+        <description>今日のITニュース TOP13 Windowsの標準スクリプト言語であるPowerShellの現状をあらためて紹介する (1/2) - はてブ 生成AIの安全性入門 | 技</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-24 ITニュースランキング</title>
@@ -2096,42 +2114,6 @@
           
             
               <category>育児</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>wifi6って早いのですね！！</title>
-        <link>https://kimujinyogi.github.io/posts/z20240807/</link>
-        <pubDate>Wed, 07 Aug 2024 12:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Wed, 07 Aug 2024 12:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/z20240807/</guid>
-        <description>家のどこにいてもwifiに繋がるようにしたい！ うちは２回建ての一軒家なのです。 今までは寝室の端っことかだと電波がよく届かない問題などあったの</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>雑談</category>
-            
-          
-        
-        
-          
-            
-              <category>雑談</category>
-            
-          
-        
-        
-          
-            
-              <category>雑談</category>
             
           
         
