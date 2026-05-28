@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Thu, 28 May 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-05-29 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-05-29/</link>
+        <pubDate>Fri, 29 May 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Fri, 29 May 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-05-29/</guid>
+        <description>今日のITニュース TOP20 重要だが緊急でない仕事が組織を停滞させる｜MRYY - はてブ Claude Codeですべての日常業務を爆速化しよう！ - はてブ OpenC</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-05-28 ITニュースランキング</title>
@@ -2001,42 +2019,6 @@
         <atom:modified>Tue, 15 Oct 2024 15:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/posts/z20241015/</guid>
         <description>欲しいものは買わないと・・・！ 人間はなぜいきているのか。 なぜ頑張って仕事をしているのか。 それは食べたいものを食べたいから。 それは行きたいとこ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>VisionPro</category>
-            
-          
-        
-        
-          
-            
-              <category>雑談</category>
-            
-          
-        
-        
-          
-            
-              <category>雑談</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Apple Vision Pro でキーボードを繋いで利用する上で必ず設定すべき項目1つだけ</title>
-        <link>https://kimujinyogi.github.io/posts/z20241012_0/</link>
-        <pubDate>Sat, 12 Oct 2024 15:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 12 Oct 2024 15:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/posts/z20241012_0/</guid>
-        <description>検索がまともにできない keyboard で色々制御したいなと思ったときに、 ハードウェアキーボードのフルアクセス機能を ON にして使う人は少なくないはず・・・！！</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
