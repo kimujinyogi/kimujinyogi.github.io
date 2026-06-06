@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sat, 06 Jun 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-06-07 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-06-07/</link>
+        <pubDate>Sun, 07 Jun 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sun, 07 Jun 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-06-07/</guid>
+        <description>今日のITニュース TOP17 アンソロピック社、開発減速提言 AI自律進化、「制御不能」前に - はてブ AI時代のUIはどこへ行く？その2！ - はてブ なぜ、A</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-06-06 ITニュースランキング</title>
@@ -1835,24 +1853,6 @@
         <atom:modified>Sat, 14 Mar 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/weekly-2026-03-08/</guid>
         <description>今週のITニュース TOP20 仕様駆動開発はやめた方がええ - はてブ 「色相・彩度・明度」の前提覆る シュレーディンガー色彩理論の欠陥、100年越しに数学的</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-03-13 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-03-13/</link>
-        <pubDate>Fri, 13 Mar 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 13 Mar 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-03-13/</guid>
-        <description>今日のITニュース TOP20 Claude Codeのセッション履歴が30日で消えると知って9999日に変えた話｜cute_agapan9087 - はてブ Anthr</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
