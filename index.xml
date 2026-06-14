@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 14 Jun 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-06-15 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-06-15/</link>
+        <pubDate>Mon, 15 Jun 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 15 Jun 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-06-15/</guid>
+        <description>今日のITニュース TOP20 実装前に設計を徹底的にインタビューし、要件を明確にするためのスキル /grill-me - はてブ ループエンジニアリングで再考する仕様書駆動開</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-06-14 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 21 Mar 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/weekly-2026-03-15/</guid>
         <description>今週のITニュース TOP20 AI生成文から「AIくささ」を取り除く技術と、Claude Codeスキルに組み込むまでの話 - はてブ 3日50万円で作れるシ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-03-20 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-03-20/</link>
-        <pubDate>Fri, 20 Mar 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 20 Mar 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-03-20/</guid>
-        <description>今日のITニュース TOP20 CLAUDE.mdを設計するとClaude Codeの生産性が別物になる — 実際の設定と運用ワークフローを公開 - Qiita - はてブ エ</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
