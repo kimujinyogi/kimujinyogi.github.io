@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 15 Jun 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-06-16 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-06-16/</link>
+        <pubDate>Tue, 16 Jun 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 16 Jun 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-06-16/</guid>
+        <description>今日のITニュース TOP20 機能を作るな。楽して作るな。 （LayerX社内資料） Don’t Build Features. Don’t Take the Easy Way Out. - はてブ グーグル、AIのための知識</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-06-15 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 21 Mar 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-03-21/</guid>
         <description>今日のITニュース TOP20 AI生成文から「AIくささ」を取り除く技術と、Claude Codeスキルに組み込むまでの話 - はてブ 3日50万円で作れるシ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>週間ITニュースランキング (2026-03-15 〜 2026-03-21)</title>
-        <link>https://kimujinyogi.github.io/news/weekly-2026-03-15/</link>
-        <pubDate>Sat, 21 Mar 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 21 Mar 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/weekly-2026-03-15/</guid>
-        <description>今週のITニュース TOP20 AI生成文から「AIくささ」を取り除く技術と、Claude Codeスキルに組み込むまでの話 - はてブ 3日50万円で作れるシ</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
