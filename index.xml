@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sat, 18 Jul 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-07-19 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-07-19/</link>
+        <pubDate>Sun, 19 Jul 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Sun, 19 Jul 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-07-19/</guid>
+        <description>今日のITニュース TOP18 最近の AI コーディングで実践している、設計を中心とした開発の進め方 - はてブ LG製ゲーミングモニターがWindows Upda</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-07-18 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Fri, 24 Apr 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-04-24/</guid>
         <description>今日のITニュース TOP20 あのイルカが20年ぶりに復活 生成AIで質問に回答 | NHKニュース - はてブ 天気予報つき時計 by ritsuka - はてブ 偉い人「日本から送ら</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-04-23 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-04-23/</link>
-        <pubDate>Thu, 23 Apr 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Thu, 23 Apr 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-04-23/</guid>
-        <description>今日のITニュース TOP20 すごすぎて笑う、なにこれ OpenAI、漫画や広告に強い画像生成AI「ChatGPT Images 2.0」正式発表 - はてブ その生産性向</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
