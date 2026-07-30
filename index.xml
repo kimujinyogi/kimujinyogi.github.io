@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-07-31 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-07-31/</link>
+        <pubDate>Fri, 31 Jul 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Fri, 31 Jul 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-07-31/</guid>
+        <description>今日のITニュース TOP20 令和8年熊本地震に乗じたSNS上の偽情報についてまとめてみた - piyolog - はてブ chat.exe - あの頃のUIで繋がる、超軽量ビデオ＆音声チャ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-07-30 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Tue, 05 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-05/</guid>
         <description>今日のITニュース TOP20 ChatGPTが出た瞬間、日本の、ど田舎で震えた。その後、私はClaude Codeをゼロから一人で作ったボリス・チェルニ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-04 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-04/</link>
-        <pubDate>Mon, 04 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 04 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-04/</guid>
-        <description>今日のITニュース TOP20 AIエージェントを会社で使いたい！→「え、セキュリティどうするの？」 企業導入への技術的アプローチ - Qiita - はてブ 【緊急】Cu</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
