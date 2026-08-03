@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 03 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-04 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-04/</link>
+        <pubDate>Tue, 04 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 04 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-04/</guid>
+        <description>今日のITニュース TOP20 宮本佳林『元アイドルがバイブコーディングできるようになるまで。』 - はてブ AIで仕事を効率化したら、なぜか僕の仕事だけ増え</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-03 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 09 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-09/</guid>
         <description>今日のITニュース TOP20 ドコモ前田社長「ahamoだけ遅いということはない」、SNSの噂を否定 - はてブ はてな、約11億円の資金流出で特別調査委員</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>週間ITニュースランキング (2026-05-03 〜 2026-05-09)</title>
-        <link>https://kimujinyogi.github.io/news/weekly-2026-05-03/</link>
-        <pubDate>Sat, 09 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 09 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/weekly-2026-05-03/</guid>
-        <description>今週のITニュース TOP20 ドコモ前田社長「ahamoだけ遅いということはない」、SNSの噂を否定 - はてブ はてな、約11億円の資金流出で特別調査委員</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
