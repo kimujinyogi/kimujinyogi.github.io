@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 04 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-05 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-05/</link>
+        <pubDate>Wed, 05 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 05 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-05/</guid>
+        <description>今日のITニュース TOP20 40代ITエンジニアだが俺たちの世代がIT業界を衰退させたことに謝罪したい - はてブ エンジニアよ、商談に出よう - Repro Tech Blog - は</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-04 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sun, 10 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-10/</guid>
         <description>今日のITニュース TOP20 上司になったら｜miyasaka - はてブ Git初心者の頃わからなかった「pullするな」の意味 - Qiita - はてブ AI時代のリッ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-09 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-09/</link>
-        <pubDate>Sat, 09 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 09 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-09/</guid>
-        <description>今日のITニュース TOP20 ドコモ前田社長「ahamoだけ遅いということはない」、SNSの噂を否定 - はてブ はてな、約11億円の資金流出で特別調査委員</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
