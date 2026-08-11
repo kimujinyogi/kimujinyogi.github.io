@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 11 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-12 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-12/</link>
+        <pubDate>Wed, 12 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 12 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-12/</guid>
+        <description>今日のITニュース TOP20 AIに書かせた文はバレる時代へ。EU AI法にClaudeも対応、編集しても残る見えないテキスト透かしを導入 | テクノエッジ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-11 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sun, 17 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-17/</guid>
         <description>今日のITニュース TOP20 Claude Code を社内で使うための「AIエージェントセキュリティ」実践編 - Qiita - はてブ 本物のモネの絵の一部を出して「あの睡蓮をAI生成</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-16 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-16/</link>
-        <pubDate>Sat, 16 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 16 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-16/</guid>
-        <description>今日のITニュース TOP20 ワコム社長が西新宿オフィスの一角を私物化、ダンススペースとして娘に提供か “物言う株主”が解任提案 - はてブ チャッピーにブコ</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
