@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Wed, 12 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-13 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-13/</link>
+        <pubDate>Thu, 13 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Thu, 13 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-13/</guid>
+        <description>今日のITニュース TOP20 Microphone Test - はてブ ドローンのカメラが中国のIPアドレスに信号を送信していることが判明、イギリス海軍がカメラのインターネット接続</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-12 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Mon, 18 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-18/</guid>
         <description>今日のITニュース TOP20 誰でもできる！ Geminiを使った「プロンプト講座」：似合う髪型がひと目でわかる『髪型コラージュ画像』の作り方 - はてブ デ</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-17 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-17/</link>
-        <pubDate>Sun, 17 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sun, 17 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-17/</guid>
-        <description>今日のITニュース TOP20 Claude Code を社内で使うための「AIエージェントセキュリティ」実践編 - Qiita - はてブ 本物のモネの絵の一部を出して「あの睡蓮をAI生成</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
