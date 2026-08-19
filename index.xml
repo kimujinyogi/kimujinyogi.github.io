@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Wed, 19 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-20 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-20/</link>
+        <pubDate>Thu, 20 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Thu, 20 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-20/</guid>
+        <description>今日のITニュース TOP20 当社システムへの不正アクセスに関するお知らせ（第二報）（2026年8月19日 18:40更新） | さくらインターネット - はて</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-19 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Mon, 25 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-25/</guid>
         <description>今日のITニュース TOP13 Windowsの標準スクリプト言語であるPowerShellの現状をあらためて紹介する (1/2) - はてブ 生成AIの安全性入門 | 技</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-24 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-24/</link>
-        <pubDate>Sun, 24 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sun, 24 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-24/</guid>
-        <description>今日のITニュース TOP18 日々の開発で使っているClaude Code Skills - はてブ 不動産系のシステム開発してたとき、外注してたテスト会社が「21.4億平米の</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
