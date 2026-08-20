@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Thu, 20 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-08-21 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-08-21/</link>
+        <pubDate>Fri, 21 Aug 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Fri, 21 Aug 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-08-21/</guid>
+        <description>今日のITニュース TOP20 はてな、創業25周年を迎えた節目に新サービス「はてなパークス」を正式リリース - プレスリリース - 株式会社はてな - はてブ 「僕</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-20 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Tue, 26 May 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-05-26/</guid>
         <description>今日のITニュース TOP20 ハンズ渋谷、11月で閉店 48年の歴史に幕 - はてブ 人間には普通の契約書に見えるのに「嘘のフォント」でAIだけ別の文章を読ま</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-05-25 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-05-25/</link>
-        <pubDate>Mon, 25 May 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 25 May 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-05-25/</guid>
-        <description>今日のITニュース TOP13 Windowsの標準スクリプト言語であるPowerShellの現状をあらためて紹介する (1/2) - はてブ 生成AIの安全性入門 | 技</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
