@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 31 Aug 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-09-01 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-09-01/</link>
+        <pubDate>Tue, 01 Sep 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 01 Sep 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-09-01/</guid>
+        <description>今日のITニュース TOP20 LLMのカスのコンサル問題 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ - はてブ 202608個人的claude code設定 - はてブ 「ページの</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-08-31 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 06 Jun 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-06-06/</guid>
         <description>今日のITニュース TOP20 PayPalマフィアは、実際に何をやったのか - Nothing ventured, nothing gained. - はてブ GitHub Copilotの料金改定で大騒ぎになっているので、トーク</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>週間ITニュースランキング (2026-05-31 〜 2026-06-06)</title>
-        <link>https://kimujinyogi.github.io/news/weekly-2026-05-31/</link>
-        <pubDate>Sat, 06 Jun 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 06 Jun 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/weekly-2026-05-31/</guid>
-        <description>今週のITニュース TOP20 PayPalマフィアは、実際に何をやったのか - Nothing ventured, nothing gained. - はてブ GitHub Copilotの料金改定で大騒ぎになっているので、トーク</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
