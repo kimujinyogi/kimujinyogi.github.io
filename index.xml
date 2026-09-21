@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-09-22 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-09-22/</link>
+        <pubDate>Tue, 22 Sep 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 22 Sep 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-09-22/</guid>
+        <description>今日のITニュース TOP20 愚昧なブクマカども - はてブ テックリードとアーキテクトの違い、テックリードとEMの違い - mtx2s’s blog - はてブ エンジニア</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-09-21 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 27 Jun 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-06-27/</guid>
         <description>今日のITニュース TOP20 30代を捧げてきた技術が死にそう - はてブ メインフレーム離脱プロジェクトの7割超が失敗、理由は「生成AIの過大評価」 - はて</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>週間ITニュースランキング (2026-06-21 〜 2026-06-27)</title>
-        <link>https://kimujinyogi.github.io/news/weekly-2026-06-21/</link>
-        <pubDate>Sat, 27 Jun 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 27 Jun 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/weekly-2026-06-21/</guid>
-        <description>今週のITニュース TOP20 30代を捧げてきた技術が死にそう - はてブ メインフレーム離脱プロジェクトの7割超が失敗、理由は「生成AIの過大評価」 - はて</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
