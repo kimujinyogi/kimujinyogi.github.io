@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 22 Sep 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-09-23 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-09-23/</link>
+        <pubDate>Wed, 23 Sep 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 23 Sep 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-09-23/</guid>
+        <description>今日のITニュース TOP20 思考の外注割合を増やし、理解は外注しない - Konifar&amp;rsquo;s ZATSU - はてブ ホームページに還ろう - はてブ 【独自】古書店で「謎の大量注文」相次ぐ</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-09-22 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sun, 28 Jun 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-06-28/</guid>
         <description>今日のITニュース TOP20 システム開発と「具体と抽象」 | 技術評論社 - はてブ Dellでパソコンを注文したが、入金済みなのに遅延の嵐、さらに値上げ告知</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-06-27 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-06-27/</link>
-        <pubDate>Sat, 27 Jun 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 27 Jun 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-06-27/</guid>
-        <description>今日のITニュース TOP20 30代を捧げてきた技術が死にそう - はてブ メインフレーム離脱プロジェクトの7割超が失敗、理由は「生成AIの過大評価」 - はて</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
