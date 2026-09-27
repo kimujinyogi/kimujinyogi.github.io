@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 27 Sep 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-09-28 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-09-28/</link>
+        <pubDate>Mon, 28 Sep 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 28 Sep 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-09-28/</guid>
+        <description>今日のITニュース TOP20 はてブコメントで攻撃的なやつをJevで隠す拡張機能 - 本しゃぶり - はてブ リモートワークを続けるためにやるべきこと - モヒカン</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-09-27 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 04 Jul 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/weekly-2026-06-28/</guid>
         <description>今週のITニュース TOP20 AIに8割書かせたコード、半年運用の答え合わせ。効いた3つと、腐った3つ - はてブ Claude Code「Fable 5」にローカルLL</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-07-03 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-07-03/</link>
-        <pubDate>Fri, 03 Jul 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 03 Jul 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-07-03/</guid>
-        <description>今日のITニュース TOP20 tmuxでいいじゃんと思ってた僕がHerdr(fork)を常用しはじめた話 | 僕のYak Shavingは終わらない2 - はて</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
