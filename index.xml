@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Sun, 04 Oct 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-10-05 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-10-05/</link>
+        <pubDate>Mon, 05 Oct 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Mon, 05 Oct 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-10-05/</guid>
+        <description>今日のITニュース TOP20 6年通った博士課程を、退学しました。 &amp;ndash;社会人博士を志すあなたに、先に渡しておきたいこと&amp;ndash;｜清水 啓</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-10-04 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 11 Jul 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/weekly-2026-07-05/</guid>
         <description>今週のITニュース TOP20 Cloudflareだけで独自ドメインメールをGmailから送受信できるようになってた - はてブ Claude Code・Codex用に</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-07-10 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-07-10/</link>
-        <pubDate>Fri, 10 Jul 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Fri, 10 Jul 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-07-10/</guid>
-        <description>今日のITニュース TOP20 Anthropic、Claude CodeでAIエージェントを活用するループ設計を紹介 | gihyo.jp - はてブ 三菱自動車、国産ヒューマ</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
