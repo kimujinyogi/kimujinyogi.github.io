@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 20 Oct 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-10-21 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-10-21/</link>
+        <pubDate>Wed, 21 Oct 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 21 Oct 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-10-21/</guid>
+        <description>今日のITニュース TOP20 「侵入経路塞いだが、バックドアから……」不正アクセス105時間の攻防、分単位で報告 防災メールのアルカディア - はてブ ソフト</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-10-20 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sun, 26 Jul 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-07-26/</guid>
         <description>今日のITニュース TOP18 街のAIっぽい作品鑑賞会 - はてブ Hermes Agent と Slack で設計し、Linear のチケットから Draft PR まで作成するワークフローの素振りをした -</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-07-25 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-07-25/</link>
-        <pubDate>Sat, 25 Jul 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 25 Jul 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-07-25/</guid>
-        <description>今日のITニュース TOP20 [PDF]株式会社はてな 特別調査委員会による調査報告書の公表及び役員報酬の一部自主返上に関するお知らせ - はてブ 自宅でロー</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
