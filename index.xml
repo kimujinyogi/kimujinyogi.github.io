@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-11-03 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-11-03/</link>
+        <pubDate>Tue, 03 Nov 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Tue, 03 Nov 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-11-03/</guid>
+        <description>今日のITニュース TOP20 【時系列で振り返る】GMO熊谷正寿社長 会見詳報 | 毎日新聞 - はてブ GMO熊谷代表、会見で改めて謝罪 SNS投稿巡り「配慮が欠</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-11-02 ITニュースランキング</title>
@@ -1813,24 +1831,6 @@
         <atom:modified>Sat, 08 Aug 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-08-08/</guid>
         <description>今日のITニュース TOP20 KDDI、楽天へのローミングを9月末で終了 - はてブ テストが増えすぎてもう限界だったので、PRで全テストを回すのをやめた話</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>週間ITニュースランキング (2026-08-02 〜 2026-08-08)</title>
-        <link>https://kimujinyogi.github.io/news/weekly-2026-08-02/</link>
-        <pubDate>Sat, 08 Aug 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Sat, 08 Aug 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/weekly-2026-08-02/</guid>
-        <description>今週のITニュース TOP20 KDDI、楽天へのローミングを9月末で終了 - はてブ テストが増えすぎてもう限界だったので、PRで全テストを回すのをやめた話</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
