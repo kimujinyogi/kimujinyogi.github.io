@@ -14,7 +14,7 @@
     <managingEditor>kimujinyogi@gmail.com (じにょぎ)</managingEditor>
     <webMaster>kimujinyogi@gmail.com (じにょぎ)</webMaster>
     <copyright><a href="mailto:kimujinyogi@gmail.com">kimujinyogi@gmail.com</a></copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 04:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 04:00:00 +0900</lastBuildDate>
     
         <atom:link href="https://kimujinyogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,24 @@
         
       
 
+      
+      <item>
+        <title>2026-11-18 ITニュースランキング</title>
+        <link>https://kimujinyogi.github.io/news/2026-11-18/</link>
+        <pubDate>Wed, 18 Nov 2026 04:00:00 +0900</pubDate>
+        <author>kimujinyogi@gmail.com (じにょぎ)</author>
+        <atom:modified>Wed, 18 Nov 2026 04:00:00 +0900</atom:modified>
+        <guid>https://kimujinyogi.github.io/news/2026-11-18/</guid>
+        <description>今日のITニュース TOP20 当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券 - はてブ おい、 Mutation Test をやれ。テスト品質を、測るために - はて</description>
+        
+        <dc:creator>じにょぎ</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2026-11-17 ITニュースランキング</title>
@@ -1853,24 +1871,6 @@
         <atom:modified>Tue, 25 Aug 2026 04:00:00 +0900</atom:modified>
         <guid>https://kimujinyogi.github.io/news/2026-08-25/</guid>
         <description>今日のITニュース TOP20 アンソロピック、AIの使い方を学べる「Claude Academy」 日本語対応 - はてブ 優秀なエンジニアが書くDesign D</description>
-        
-        <dc:creator>じにょぎ</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>2026-08-24 ITニュースランキング</title>
-        <link>https://kimujinyogi.github.io/news/2026-08-24/</link>
-        <pubDate>Mon, 24 Aug 2026 04:00:00 +0900</pubDate>
-        <author>kimujinyogi@gmail.com (じにょぎ)</author>
-        <atom:modified>Mon, 24 Aug 2026 04:00:00 +0900</atom:modified>
-        <guid>https://kimujinyogi.github.io/news/2026-08-24/</guid>
-        <description>今日のITニュース TOP20 AIに書かせたら、前より休めなくなった｜松浦勝人 - はてブ 7月にオーストラリアで発生した大規模通信障害の仕組みが判明したが</description>
         
         <dc:creator>じにょぎ</dc:creator>
         
